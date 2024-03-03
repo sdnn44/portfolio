@@ -8,14 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -26,6 +18,42 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+@layer components {
+  .li-element {
+    @apply font-semibold py-3 px-4 text-lg relative tracking-wide
+  }
+}
+
+.box {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(212, 0, 255, 0.357);
+  z-index: 0;
+}
+.logo a::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px; 
+  border-bottom: 5px solid rgb(59, 12, 67);
+  border-left: 5px solid rgb(59, 12, 67);
+  bottom: 0;
+  left: 0;
+}
+.logo a::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px; 
+  border-top: 5px solid rgb(59, 12, 67);
+  border-right: 5px solid rgb(59, 12, 67);
+  top: 0;
+  right: 0;
+}
+.active {
+  border-bottom: 1px solid rgb(59, 12, 67);
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
