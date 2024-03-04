@@ -3,9 +3,19 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { menu } from '../../utils/sidebar-menu';
 import Link from 'next/link';
-import ToggleButton from './ToggleButton';
+import ToggleButton from './Menu/MenuToggle';
+import { motion } from 'framer-motion';
 
 type Props = {}
+
+const variants = {
+  open: {
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+  },
+  closed: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 }
+  }
+};
 
 export default function Sidebar({ }: Props) {
 
@@ -15,9 +25,11 @@ export default function Sidebar({ }: Props) {
     <div className="flex justify-center items-center h-full p-6 z-20 text-white">
       <div className="logo absolute top-20 text-3xl capitalize">
         {/* <a href='#' className='text-semibold px-5 py-4 font-xl'><span>Ł</span>R</a> */}
-        <ToggleButton setOpen={setOpen}/>
+        <ToggleButton setOpen={setOpen} />
       </div>
-      <ul className='nav list-none mt-10'>
+      <motion.ul
+        variants={variants}
+        className='nav list-none mt-10'>
         {menu.map((item) => {
           const link = item.link;
           return (
@@ -37,7 +49,7 @@ export default function Sidebar({ }: Props) {
         <li><a href='#' className='li-element'>Experiance</a></li>
         <li><a href='#' className='li-element'>Projects</a></li>
         <li><a href='#' className='li-element'>Contact</a></li> */}
-      </ul>
+      </motion.ul>
     </div>
   )
 }

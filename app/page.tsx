@@ -4,11 +4,11 @@ import Sidebar from "./components/Sidebar/Sidebar";
 
 export default function Home() {
   return (
-    <div className="flex">
-      <div className="fixed inset-y-0 left-0 top-0 w-64 backdrop-blur-md">
+    <div className="">
+      {/* <div className="fixed inset-y-0 left-0 top-0 w-64 backdrop-blur-md">
         <Sidebar />
       </div>
-      <div className="w-full"> 
+      <div className="w-full">
         <div className="flex flex-col">
           <section id="hero" className="h-screen bg-[url('/bg-2.jpg')]">
             <div className="bg-transparent text-white">
@@ -17,14 +17,21 @@ export default function Home() {
             <Hero />
           </section>
           <section id="about" className="h-screen">
-            {/* About Section */}
           </section>
           <section id="projects" className="h-screen">
-            {/* Projects Section */}
           </section>
-          {/* Add more sections as needed */}
         </div>
-      </div>
+      </div> */}
+
+      <section className="">
+        <Header/>
+      </section>
+      <section>About</section>
+      <section>Education</section>
+      <section>Portfolio1</section>
+      <section>Portfolio2</section>
+      <section>Portfolio3</section>
+      <section>Contact</section>
     </div>
     // SIDEBAR
     // HEADER

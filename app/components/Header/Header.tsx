@@ -1,10 +1,12 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
+import AnimatedSidebar from '../Sidebar/AnimatedSidebar'
 type Props = {}
 
 export default function Header({ }: Props) {
     return (
-        <header className='top-0 flex items-start justify-between max-w-3xl mx-auto p-5 xl:items-center'>
+        <header className='top-0 flex items-start border-2 justify-end max-w-5xl mx-auto p-5 xl:items-center'>
+            <AnimatedSidebar />
             <div className='flex flex-row items-center '>
                 <SocialIcon url="https://twitter.com" fgColor='white' bgColor='transparent' />
                 <SocialIcon url="https://discord.com" fgColor='white' bgColor='transparent' />
