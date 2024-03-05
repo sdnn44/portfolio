@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import Project from "./components/Project/Project";
 import Sidebar from "./components/Sidebar/Sidebar";
 
 export default function Home() {
@@ -28,9 +29,7 @@ export default function Home() {
       </section>
       <section>About</section>
       <section>Education</section>
-      <section>Portfolio1</section>
-      <section>Portfolio2</section>
-      <section>Portfolio3</section>
+      <Project />
       <section>Contact</section>
     </div>
     // SIDEBAR
