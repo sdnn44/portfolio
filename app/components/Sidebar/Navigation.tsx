@@ -18,7 +18,7 @@ export default function Navigation({ }: Props) {
         <div className='absolute w-full h-screen flex flex-col items-center justify-center'>
             <motion.ul variants={variants}>
                 {menu.map(item => (
-                    <MenuElement id={item.id} title={item.title} icon={item.icon} link={item.link} />
+                    <MenuElement key={item.id} id={item.id} title={item.title} icon={item.icon} link={item.link} />
                 ))}
             </motion.ul>
         </div>

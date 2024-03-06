@@ -36,15 +36,16 @@ export default function MenuElement({ id, title, link, icon }: MenuItemProps) {
         //     })}
         // </div>
         <div className='p-3'>
-            <motion.li
+            <motion.a
                 variants={variants}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                className='text-3xl flex flex-row gap-5 cursor-pointer'
+                href={link}
+                className='text-3xl flex flex-row gap-5 cursor-pointer z-20'
             >
                 <div className="icon-placeholder w-10 flex justify-center">{icon}</div>
                 <div className="text-placeholder tracking-widest">{title}</div>
-            </motion.li>
+            </motion.a>
         </div>
 
     )

@@ -19,7 +19,7 @@ export default function MenuToggle({ setOpen }: Props) {
     return (
         <button
             onClick={() => setOpen((prev: boolean) => !prev)}
-            className="w-[50px] h-[50px] rounded-xl fixed left-[25px] top-[25px] flex items-center justify-center">
+            className="w-[50px] h-[50px] rounded-xl fixed left-[25px] top-[25px] flex items-center justify-center z-20">
             <svg width="23" height="23" viewBox="0 0 23 23">
                 <Path
                     variants={{

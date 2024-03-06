@@ -23,14 +23,13 @@ export default function Home() {
           </section>
         </div>
       </div> */}
-
-      <section className="">
-        <Header/>
+      <section id="home">
+        <Header />
       </section>
-      <section>About</section>
-      <section>Education</section>
+      <section id="about">About</section>
+      <section id="experiance">Education</section>
       <Project />
-      <section>Contact</section>
+      <section id="contact">Contact</section>
     </div>
     // SIDEBAR
     // HEADER

@@ -32,7 +32,7 @@ export default function AnimatedSidebar({ }: Props) {
     return (
         <motion.nav
             animate={isOpen ? "open" : "closed"}
-            className='flex flex-col items-center justify-center bg-white text-black'>
+            className='flex flex-col items-center justify-center bg-white text-black z-20'>
             <motion.div
                 variants={variants}
                 className='fixed top-0 left-0 w-[400px] bg-white h-full'>

@@ -7,14 +7,17 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
 body {
   color: lightgray;
   background: #0c0c1d;
 }
 @layer components {
   section {
-    @apply h-screen 
+    @apply h-screen snap-center
   }
 }
 
