@@ -27,7 +27,7 @@ export default function Home() {
         <Header />
       </section>
       <section id="about">About</section>
-      <section id="experiance">Education</section>
+      <section id="experiance" className="border-2">Education</section>
       <Project />
       <section id="contact">Contact</section>
     </div>
