@@ -1,3 +1,4 @@
+import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Project from "./components/Project/Project";
@@ -29,7 +30,9 @@ export default function Home() {
       <section id="about">About</section>
       <section id="experiance" className="border-2">Education</section>
       <Project />
-      <section id="contact">Contact</section>
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
     // SIDEBAR
     // HEADER
