@@ -30,7 +30,7 @@ export default function Home() {
       <section id="about">About</section>
       <section id="experiance" className="border-2">Education</section>
       <Project />
-      <section id="contact">
+      <section id="contact" className="">
         <Contact />
       </section>
     </div>

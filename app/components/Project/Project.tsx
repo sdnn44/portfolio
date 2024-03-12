@@ -3,7 +3,7 @@ import portfolioProjects from '@/app/utils/projects';
 import React from 'react'
 import PageProgress from './PageProgress';
 import ProjectSection from './ProjectSection';
-import { useMotionValueEvent, useScroll } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 
 export default function Project() {
 
@@ -13,6 +13,8 @@ export default function Project() {
         target: ref,
         offset: ["start start", "end start"],
     });
+
+    const height = useTransform(scrollYProgress, [0, 1], [50, 0]);
 
     const [activeCard, setActiveCard] = React.useState(0);
 
@@ -43,6 +45,9 @@ export default function Project() {
             {portfolioProjects.map(project => (
                 <ProjectSection project={project} key={project.id} activeCard={activeCard} />
             ))}
+            <motion.div style={{height}} className="relative mt-100">
+                <div className="absolute rounded-bl-[50%] rounded-br-[50%] shadow-lg shadow-black h-[1550%] w-[120%] bg-[#2b1643] left-[-10%]"></div>
+            </motion.div>
         </div>
     );
 }
