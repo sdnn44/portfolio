@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Project from "./components/Project/Project";
 import Sidebar from "./components/Sidebar/Sidebar";
+import Skills from "./components/Skills/Skills";
 
 export default function Home() {
   return (
@@ -24,13 +25,16 @@ export default function Home() {
           </section>
         </div>
       </div> */}
-      <section id="home">
+      <section id="home" style={{ scrollSnapAlign: 'none' }}>
         <Header />
       </section>
-      <section id="about">About</section>
-      <section id="experiance" className="border-2">Education</section>
+      <section id="about" style={{ scrollSnapAlign: 'none' }}>About</section>
+      <section id="experiance" style={{ scrollSnapAlign: 'none' }}>Education</section>
       <Project />
-      <section id="contact" className="">
+      <section id="skills" style={{ scrollSnapAlign: 'none' }} >
+        <Skills />
+      </section>
+      <section id="contact" style={{ scrollSnapAlign: 'none' }}>
         <Contact />
       </section>
     </div>

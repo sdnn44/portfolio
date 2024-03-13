@@ -8,16 +8,17 @@
   --background-end-rgb: 255, 255, 255;
 }
 html {
-  /* scroll-snap-type: y mandatory;
-  scroll-behavior: smooth; */
+  overflow-y: scroll;
+  scroll-snap-type: both proximity;
+  scroll-behavior: smooth;
 }
 body {
   color: lightgray;
-  background: #0c0c1d;
+  background: #0c0c1d;/*  */
 }
 @layer components {
   section {
-    @apply h-screen snap-center
+    @apply h-screen 
   }
 }
 
@@ -27,6 +28,12 @@ body {
   }
 }
 
+/* #home, 
+#about, 
+#experiance,
+#contact {
+  scroll-snap-type: none;
+} */
 .box {
   width: 15px;
   height: 15px;

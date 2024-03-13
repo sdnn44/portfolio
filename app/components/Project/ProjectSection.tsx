@@ -46,7 +46,7 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
 
     const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
     return (
-        <section className=''>
+        <section className='snap-start'>
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{

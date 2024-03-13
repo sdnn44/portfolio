@@ -36,8 +36,8 @@ export default function Project() {
     });
 
     return (
-        <div ref={ref} className='relative'>
-            <div className='text-center sticky top-0 left-0 pt-6 flex-col z-10 overflow-hidden'>
+        <div ref={ref} className='relative border-2'>
+            <div className='text-center sticky top-0 left-0 pt-6 flex-col z-10'>
                 <h1 className='text-5xl font-bold text-orange-400 tracking-wider'>Recent projects</h1>
                 <PageProgress />
             </div>
@@ -45,9 +45,8 @@ export default function Project() {
             {portfolioProjects.map(project => (
                 <ProjectSection project={project} key={project.id} activeCard={activeCard} />
             ))}
-            <motion.div style={{height}} className="relative mt-100">
-                <div className="absolute rounded-bl-[50%] rounded-br-[50%] shadow-lg shadow-black h-[1550%] w-[120%] bg-[#2b1643] left-[-10%]"></div>
-            </motion.div>
+
+
         </div>
     );
 }

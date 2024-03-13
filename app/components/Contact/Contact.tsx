@@ -1,11 +1,16 @@
+"use client";
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 
 type Props = {}
 
 export default function Contact({ }: Props) {
+
+
+
     return (
-        <div className='grid md:grid-cols-2 my-12 md:my-12 max-w-[1100px] m-auto py-60 gap-5 justify-center'>
+
+        <div className='grid md:grid-cols-2 max-w-[1100px] m-auto py-60 gap-5 justify-center'>
             <div className='flex flex-col max-w-96 gap-2'>
                 <h5 className='text-5xl font-bold text-white my-2'>
                     Let's talk!
@@ -20,11 +25,7 @@ export default function Contact({ }: Props) {
                 </div>
             </div>
             <div>
-                <form action="" className='flex flex-col'>
-                    {/* <div className='mb-6'>
-                        <label htmlFor="name" className='text-white block mb-2 text-sm font-medium'>Name</label>
-                        <input type='text' id='name' required placeholder='Name' className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' />
-                    </div> */}
+                <form action="" className='flex flex-col'>{/*  */}
                     <div className='mb-6'>
                         <label htmlFor="email" className='text-white block mb-2 text-sm font-medium'>Email</label>
                         <input type='email' id='email' required placeholder='yourmail@gmail.com' className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' />
