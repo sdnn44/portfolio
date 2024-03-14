@@ -31,10 +31,10 @@ export default function Home() {
       <section id="about" style={{ scrollSnapAlign: 'none' }}>About</section>
       <section id="experiance" style={{ scrollSnapAlign: 'none' }}>Education</section>
       <Project />
-      <section id="skills" style={{ scrollSnapAlign: 'none' }} >
+      <section id="skills" style={{ scrollSnapAlign: 'none' }} className='bg-[#090909] z-0 '>
         <Skills />
       </section>
-      <section id="contact" style={{ scrollSnapAlign: 'none' }}>
+      <section id="contact" style={{ scrollSnapAlign: 'none' }} className='z-20 border-2'>
         <Contact />
       </section>
     </div>

@@ -10,7 +10,7 @@ export default function Contact({ }: Props) {
 
     return (
 
-        <div className='grid md:grid-cols-2 max-w-[1100px] m-auto py-60 gap-5 justify-center'>
+        <div className='grid md:grid-cols-2 max-w-[1100px] m-auto py-60 gap-5 justify-center z-30 border-2'>
             <div className='flex flex-col max-w-96 gap-2'>
                 <h5 className='text-5xl font-bold text-white my-2'>
                     Let's talk!

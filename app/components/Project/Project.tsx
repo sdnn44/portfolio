@@ -36,7 +36,7 @@ export default function Project() {
     });
 
     return (
-        <div ref={ref} className='relative border-2'>
+        <div ref={ref} className='relative'>
             <div className='text-center sticky top-0 left-0 pt-6 flex-col z-10'>
                 <h1 className='text-5xl font-bold text-orange-400 tracking-wider'>Recent projects</h1>
                 <PageProgress />
@@ -45,8 +45,6 @@ export default function Project() {
             {portfolioProjects.map(project => (
                 <ProjectSection project={project} key={project.id} activeCard={activeCard} />
             ))}
-
-
         </div>
     );
 }
