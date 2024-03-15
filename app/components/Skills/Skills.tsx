@@ -3,6 +3,7 @@ import React from 'react'
 import { motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 import skills from '@/app/utils/technologies';
 import Image from 'next/image';
+import { BackgroundGradient } from '../ui/background-gradient'
 
 type Props = {}
 
@@ -15,7 +16,7 @@ export default function Skills({ }: Props) {
         offset: ["start end", "end start"],
     });
 
-    const opacity = useTransform(scrollYProgress, [0.1, 0.85], [1, 0]);
+    const opacity = useTransform(scrollYProgress, [0.1, 0.75], [1, 0]);
     const y = useTransform(scrollYProgress, [0.5, 1], ["0vh", "50vh"]);
 
     const height = useTransform(scrollYProgress, [0, 0.8], [50, 0]);
@@ -28,16 +29,16 @@ export default function Skills({ }: Props) {
                 className="mx-auto overflow-hidden grid w-full max-w-[120rem] grid-cols-4 gap-12 p-20 z-10">
                 {skills.map(({ id, name, image }) => (
                     <div key={id} className='flex flex-col items-center justify-center'>
-                        <div className="padding-8 mb-4 flex h-32 w-32 items-center justify-center rounded-[1.8rem] bg-[#151515] -z-50 ">
-                            <Image src={`/${image}`} alt={''} width={500} height={500} className='h-[64px] w-[64px]' />
-                        </div>
-                        <h3 className="text-xl text-white">{name}</h3>
+                        <BackgroundGradient className="padding-8 flex h-32 w-32 items-center justify-center rounded-[1.8rem]  cursor-pointer bg-[#151515] z-10 ">
+                            <Image src={`/${image}`} alt={''} width={500} height={500} className='h-[64px] w-[64px] z-30' />
+                        </BackgroundGradient>
+                        <h3 className="text-xl mt-2 text-white">{name}</h3>
                     </div>
                 ))}
             </motion.div>
             <div ref={ref} className='relative'>
                 <motion.div style={{ height }} className="relative">
-                    <div className="z-10 absolute rounded-bl-[50%] rounded-br-[50%] shadow-xl shadow-black h-[1200%] w-[110%] bg-[#090909] left-[-10%]"></div>
+                    <div className="z-20 absolute rounded-bl-[50%] rounded-br-[50%] shadow-xl shadow-black h-[1200%] w-[110%] bg-[#090909] left-[-10%]"></div>
                 </motion.div>
             </div>
         </div>

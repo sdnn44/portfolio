@@ -15,6 +15,7 @@ export default function Project() {
     });
 
     const height = useTransform(scrollYProgress, [0, 1], [50, 0]);
+    const opacity = useTransform(scrollYProgress, [0.8, 0.90], [1, 0]);
 
     const [activeCard, setActiveCard] = React.useState(0);
 
@@ -37,10 +38,10 @@ export default function Project() {
 
     return (
         <div ref={ref} className='relative'>
-            <div className='text-center sticky top-0 left-0 pt-6 flex-col z-10'>
+            <motion.div style={{ opacity }} className='text-center sticky top-0 left-0 pt-6 flex-col z-10'>
                 <h1 className='text-5xl font-bold text-orange-400 tracking-wider'>Recent projects</h1>
                 <PageProgress />
-            </div>
+            </motion.div>
 
             {portfolioProjects.map(project => (
                 <ProjectSection project={project} key={project.id} activeCard={activeCard} />

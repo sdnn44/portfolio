@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
+import { BackgroundBeams } from '../ui/background-beams';
 
 type Props = {}
 
@@ -9,8 +10,8 @@ export default function Contact({ }: Props) {
 
 
     return (
-
-        <div className='grid md:grid-cols-2 max-w-[1100px] m-auto py-60 gap-5 justify-center z-30 border-2'>
+        // h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased
+        <div className='grid md:grid-cols-2 relative max-w-[1100px] m-auto py-60 gap-5 justify-center z-10 antialiased'>
             <div className='flex flex-col max-w-96 gap-2'>
                 <h5 className='text-5xl font-bold text-white my-2'>
                     Let's talk!
@@ -43,6 +44,7 @@ export default function Contact({ }: Props) {
                     </button>
                 </form>
             </div>
+            <BackgroundBeams />
         </div>
     )
 }

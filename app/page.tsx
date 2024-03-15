@@ -34,7 +34,7 @@ export default function Home() {
       <section id="skills" style={{ scrollSnapAlign: 'none' }} className='bg-[#090909] z-0 '>
         <Skills />
       </section>
-      <section id="contact" style={{ scrollSnapAlign: 'none' }} className='z-20 border-2'>
+      <section id="contact" style={{ scrollSnapAlign: 'none' }} className='bg-[#090909] z-20'>
         <Contact />
       </section>
     </div>
