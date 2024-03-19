@@ -14,7 +14,7 @@ html {
 }
 body {
   color: lightgray;
-  background: #0c0c1d;/*  */
+  background: #0c0c1d;
 }
 @layer components {
   section {
@@ -26,6 +26,12 @@ body {
   .li-element {
     @apply font-semibold py-3 px-4 text-lg relative tracking-wide
   }
+}
+
+.experiance-section {
+  background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
+  width: 100%;
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
 }
 
 /* #home, 

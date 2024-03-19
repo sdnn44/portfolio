@@ -1,4 +1,6 @@
+import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import Experiance from "./components/Experiance/Experiance";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Project from "./components/Project/Project";
@@ -28,8 +30,12 @@ export default function Home() {
       <section id="home" style={{ scrollSnapAlign: 'none' }}>
         <Header />
       </section>
-      <section id="about" style={{ scrollSnapAlign: 'none' }}>About</section>
-      <section id="experiance" style={{ scrollSnapAlign: 'none' }}>Education</section>
+      {/* <section id="about" style={{ scrollSnapAlign: 'none' }}>
+        <About />
+      </section> */}
+      <section id="experiance" style={{ scrollSnapAlign: 'none' }} className="experiance-section">
+        <Experiance />
+      </section>
       <Project />
       <section id="skills" style={{ scrollSnapAlign: 'none' }} className='bg-[#090909] z-0 '>
         <Skills />
