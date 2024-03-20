@@ -1,6 +1,6 @@
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import Experiance from "./components/Experiance/Experiance";
+import Experiance from "./components/Experience/Experience";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Project from "./components/Project/Project";
