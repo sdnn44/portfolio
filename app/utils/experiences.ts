@@ -13,11 +13,11 @@ export interface ExperienceProps {
     {
         id: 0,
         img: "kul.png",
-        role: "DevOps & Fullstack Engineering Intern",
+        role: "Fullstack Developer Intern",
         grade: "5",
-        company: "Flipr Inovations Pvt. Ltd.",
+        company: "Katolicki Uniwersytet Lubelski",
         date: "Aug 2023 - July 2023",
-        desc: "Working on Flipr Platforms, managing DevOps, and streamlining the process with automation.",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         skills: [
           "Docker",
           "Terraform",
@@ -35,11 +35,11 @@ export interface ExperienceProps {
       {
         id: 1,
         img: "kul.png",
-        role: "DevOps & Fullstack Engineering Intern",
+        role: "Fullstack Developer Intern",
         grade: "5",
-        company: "Flipr Inovations Pvt. Ltd.",
+        company: "Katolicki Uniwersytet Lubelski",
         date: "Aug 2023 - July 2023",
-        desc: "Working on Flipr Platforms, managing DevOps, and streamlining the process with automation.",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         skills: [
           "Docker",
           "Terraform",
@@ -57,11 +57,11 @@ export interface ExperienceProps {
       {
         id: 2,
         img: "kul.png",
-        role: "DevOps & Fullstack Engineering Intern",
+        role: "Fullstack Developer Intern",
         grade: "5",
-        company: "Flipr Inovations Pvt. Ltd.",
+        company: "Katolicki Uniwersytet Lubelski",
         date: "Aug 2023 - July 2023",
-        desc: "Working on Flipr Platforms, managing DevOps, and streamlining the process with automation.",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         skills: [
           "Docker",
           "Terraform",
@@ -79,11 +79,11 @@ export interface ExperienceProps {
       {
         id: 3,
         img: "kul.png",
-        role: "DevOps & Fullstack Engineering Intern",
+        role: "Fullstack Developer Intern",
         grade: "5",
-        company: "Flipr Inovations Pvt. Ltd.",
+        company: "Katolicki Uniwersytet Lubelski",
         date: "Aug 2023 - July 2023",
-        desc: "Working on Flipr Platforms, managing DevOps, and streamlining the process with automation.",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         skills: [
           "Docker",
           "Terraform",
@@ -101,11 +101,11 @@ export interface ExperienceProps {
       {
         id: 4,
         img: "kul.png",
-        role: "DevOps & Fullstack Engineering Intern",
+        role: "Fullstack Developer Intern",
         grade: "5",
-        company: "Flipr Inovations Pvt. Ltd.",
+        company: "Katolicki Uniwersytet Lubelski",
         date: "Aug 2023 - July 2023",
-        desc: "Working on Flipr Platforms, managing DevOps, and streamlining the process with automation.",
+        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         skills: [
           "Docker",
           "Terraform",
