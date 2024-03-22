@@ -23,7 +23,7 @@ export default function Experiance({ }: Props) {
                 <h1 className='text-5xl font-bold tracking-widest'>Experience</h1>
                 <span className='text-xl font-semibold'>My work experience as a software engineer and working on different companies and projects.</span>
             </div>
-            <div className='w-full flex justify-center items-center mx-auto mt-5 gap-[12px] flex-col max-w-[1000px]'>
+            <div className='w-full flex justify-center items-center mx-auto mt-24 flex-col max-w-[1000px]'>
                 {/* <Timeline position="alternate">
                     {experiences.map((experience, index) => (
                         <TimelineItem>

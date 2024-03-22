@@ -20,14 +20,16 @@ interface SectionProps {
 }
 
 const backgroundColors = [
-    "rgb(43,22,67)",
-    "rgb(27,26,33)",
-    "rgb(15,17,23)",
+    "rgb(12, 12, 29)",
+    "rgb(43, 22, 67)",
+    "rgb(27, 26, 33)",
+    "rgb(15, 17, 23)",
     // "rgb(43,22,67)",
     "var(--neutral-900)",
 ];
 
 const buttonBackground = [
+    "bg-[#764ef9]",
     "bg-[#764ef9]",
     "bg-[#0057be]",
     "bg-[#6b21a8]",
@@ -64,14 +66,14 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                         <div className='flex justify-around'>
                             <Button
                                 borderRadius="1.75rem"
-                                className={`${buttonBackground[project.id-1]} text-black border-[#0057be]`}
+                                className={`${buttonBackground[project.id - 1]} text-black border-[#0057be]`}
                             >
                                 <SocialIcon url="https://github.com" fgColor='black' bgColor='transparent' />
                                 Live Demo
                             </Button>
                             <Button
                                 borderRadius="1.75rem"
-                                className={`${buttonBackground[project.id-1]} text-black border-[#0057be]`}
+                                className={`${buttonBackground[project.id - 1]} text-black border-[#0057be]`}
                             >
                                 <SocialIcon url="https://github.com" fgColor='black' bgColor='transparent' />
                                 Code
