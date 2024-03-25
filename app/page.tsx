@@ -27,12 +27,13 @@ export default function Home() {
           </section>
         </div>
       </div> */}
-      <section id="home" style={{ scrollSnapAlign: 'none' }}>
+      {/* <section id="home" style={{ scrollSnapAlign: 'none' }}>
         <Header />
-      </section>
-      {/* <section id="about" style={{ scrollSnapAlign: 'none' }}>
-        <About />
       </section> */}
+      <Header />
+      <section id="about" style={{ scrollSnapAlign: 'none' }}>
+        <About />
+      </section>
       <section id="experiance" style={{ scrollSnapAlign: 'none' }} className="experiance-section">
         <Experiance />
       </section>
