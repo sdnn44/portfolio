@@ -30,8 +30,8 @@ export default function Home() {
       {/* <section id="home" style={{ scrollSnapAlign: 'none' }}>
         <Header />
       </section> */}
-      <Header />
       <section id="about" style={{ scrollSnapAlign: 'none' }}>
+        <Header />
         <About />
       </section>
       <section id="experiance" style={{ scrollSnapAlign: 'none' }} className="experiance-section">
