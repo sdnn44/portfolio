@@ -1,6 +1,7 @@
 "use client";
 
 import gsap from 'gsap';
+import { motion } from 'framer-motion';
 import React, { useEffect, useRef } from 'react'
 
 type Props = {}
@@ -18,20 +19,20 @@ export default function HeroHeadline({ }: Props) {
     }, []);
 
     const animation = () => {
-        if(xDirection < -500) {
+        if (xDirection < -1640) {
             xDirection = 0;
         }
         gsap.set(firstParagraph.current, { x: xDirection });
         gsap.set(secondParagraph.current, { x: xDirection });
-        xDirection += 0.1 * direction;
+        xDirection += 1 * direction;
         requestAnimationFrame(animation);
     }
 
     return (
-        <div className='absolute top-[calc(100vh-300px)]'>
-            <div className='relative whitespace-nowrap '>
-                <p ref={firstParagraph} className='m-0 text-white text-[230px] font-medium pr-[50px] opacity-10 '>Freelance Photographer</p>
-                {/* <p ref={secondParagraph} className='m-0 left-[100%] text-white text-[230px] font-medium pr-[50px] opacity-10 absolute'>Freelance Photographer -</p> */}
+        <div className='relative overflow-hidden bottom-36 '>
+            <div className="whitespace-nowrap relative opacity-10">
+                <p ref={firstParagraph} className="relative text-[20vh] pr-[50px] top-0 w-1/2 font-bold">Rzedzicki Łukasz-</p>
+                <p ref={secondParagraph} className="absolute left-[130%] text-[20vh] pr-[50px] top-0 w-1/2 font-bold">Rzedzicki Łukasz-</p>
             </div>
         </div>
     )

@@ -30,7 +30,7 @@ export default function Home() {
       {/* <section id="home" style={{ scrollSnapAlign: 'none' }}>
         <Header />
       </section> */}
-      <section id="about" style={{ scrollSnapAlign: 'none' }}>
+      <section id="about" style={{ scrollSnapAlign: 'none' }} className="bg-gradient-to-t from-[#0c0c1d] from-50% to-[#5a21b665]">
         <Header />
         <About />
       </section>

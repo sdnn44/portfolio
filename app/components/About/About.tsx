@@ -20,7 +20,11 @@ export default function About({ }: Props) {
             <span className='text-6xl opacity-30 tracking-widest z-0'>Web Developer</span>
           </h1>
           <p className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat accusamus reiciendis quibusdam error modi dignissimos tempore, nam soluta, impedit explicabo, ipsa optio sit minus itaque? Modi sed atque ratione!</p>
-          <a href='#' className='border-2 rounded-xl w-40 p-4 flex items-center justify-center'>Download CV</a>
+          <div className='flex gap-10 w-full justify-evenly'>
+
+            <a href='#' className='button left'>Resume</a>
+            <a href='#' className='button left'>Contact</a>
+          </div>
         </div>
       </div>
       <HeroHeadline />
