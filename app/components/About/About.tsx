@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import HeroBgAnimation from '../Hero/HeroBgAnimation'
 import HeroHeadline from '../Hero/HeroHeadline'
+import Button from '../Button/Button'
 
 type Props = {}
 
@@ -21,9 +22,13 @@ export default function About({ }: Props) {
           </h1>
           <p className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat accusamus reiciendis quibusdam error modi dignissimos tempore, nam soluta, impedit explicabo, ipsa optio sit minus itaque? Modi sed atque ratione!</p>
           <div className='flex gap-10 w-full justify-evenly'>
-
-            <a href='#' className='button left'>Resume</a>
-            <a href='#' className='button left'>Contact</a>
+            <Button className="button left" label='Download CV'>
+              <p className='text-[#5a21b5]'>Resume</p>
+            </Button>
+            <Button className="button left" label='Get in touch'>
+              <p className='text-[#5a21b5]'>Contact</p>
+            </Button>
+            {/* <a href='#' className='button left'>Contact</a> */}
           </div>
         </div>
       </div>

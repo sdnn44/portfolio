@@ -19,7 +19,7 @@ export default function HeroHeadline({ }: Props) {
     }, []);
 
     const animation = () => {
-        if (xDirection < -1640) {
+        if (xDirection < -1890) {
             xDirection = 0;
         }
         gsap.set(firstParagraph.current, { x: xDirection });
@@ -31,8 +31,8 @@ export default function HeroHeadline({ }: Props) {
     return (
         <div className='relative overflow-hidden bottom-36 '>
             <div className="whitespace-nowrap relative opacity-10">
-                <p ref={firstParagraph} className="relative text-[20vh] pr-[50px] top-0 w-1/2 font-bold">Rzedzicki Łukasz-</p>
-                <p ref={secondParagraph} className="absolute left-[130%] text-[20vh] pr-[50px] top-0 w-1/2 font-bold">Rzedzicki Łukasz-</p>
+                <p ref={firstParagraph} className="relative text-[20vh] pr-[50px] top-0 w-1/2 tracking-widest font-bold">Rzedzicki Łukasz </p>
+                <p ref={secondParagraph} className="absolute left-[150%] text-[20vh] pr-[50px] tracking-widest top-0 w-1/2 font-bold">Rzedzicki Łukasz </p>
             </div>
         </div>
     )
