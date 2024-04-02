@@ -14,15 +14,13 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import ExperienceCard from './ExperienceCard';
 import { experiance } from '@/app/utils/icons';
+import SectionHeader from '../SectionHeader/SectionHeader';
 type Props = {}
 
 export default function Experiance({ }: Props) {
     return (
         <div className='pb-10'>
-            <div className='flex flex-col justify-center items-center gap-4'>
-                <h1 className='text-5xl font-bold tracking-widest'>Experience</h1>
-                <span className='text-xl font-semibold'>My work experience as a software engineer and working on different companies and projects.</span>
-            </div>
+            <SectionHeader title="Experiance" description="My work experience as a software engineer and working on different companies and projects." />
             <div className='w-full flex justify-center items-center mx-auto mt-24 flex-col max-w-[1000px]'>
                 {/* <Timeline position="alternate">
                     {experiences.map((experience, index) => (

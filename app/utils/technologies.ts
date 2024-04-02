@@ -1,68 +1,71 @@
+import { IconType } from "react-icons";
+import { SiReact } from "react-icons/si";
+
 interface Skill {
     id: number;
-    name: string;
-    image: string;
+    title: string;
+    Icon: IconType;
 }
 const skills: Skill[] = [
     {
         id: 1,
-        name: "React.js",
-        image: 'react.png'
+        title: "React.js",
+        Icon: SiReact
     },
     {
         id: 2,
-        name: "Nextjs",
-        image: 'nextjs.png'
+        title: "Nextjs",
+        Icon: SiReact
     },
     {
         id: 3,
-        name: "Nextjs",
-        image: 'nextjs.png'
+        title: "Nextjs",
+        Icon: SiReact
     },
     {
         id: 4,
-        name: "Nextjs",
-        image: 'nextjs.png'
+        title: "Nextjs",
+        Icon: SiReact
     },
     {
         id: 5,
-        name: "Nextjs",
-        image: 'nextjs.png'
+        title: "Nextjs",
+        Icon: SiReact
     },
     {
         id: 6,
-        name: "Nextjs",
-        image: 'nextjs.png'
+        title: "Nextjs",
+        Icon: SiReact
     },
     {
         id: 7,
-        name: "Nextjs",
-        image: 'nextjs.png'
+        title: "Nextjs",
+        Icon: SiReact
     },
     {
         id: 8,
-        name: "Nextjs",
-        image: 'nextjs.png'
+        title: "Nextjs",
+        Icon: SiReact
     },
     {
         id: 9,
-        name: "Nextjs",
-        image: 'nextjs.png'
+        title: "Nextjs",
+        Icon: SiReact
     },
     {
         id: 10,
-        name: "Nextjs",
-        image: 'nextjs.png'
+        title: "Nextjs",
+        Icon: SiReact
     },
     {
         id: 11,
-        name: "Nextjs",
-        image: 'nextjs.png'
+        title: "Nextjs",
+        Icon: SiReact
     },
     {
         id: 12,
-        name: "Nextjs",
-        image: 'nextjs.png'
+        title: "Nextjs",
+        Icon: SiReact
     },
 ];
 

@@ -38,7 +38,7 @@ export default function Home() {
         <Experiance />
       </section>
       <Project />
-      <section id="skills" style={{ scrollSnapAlign: 'none' }} className='bg-[#090909] z-0 '>
+      <section id="skills" style={{ scrollSnapAlign: 'none' }} className='bg-gradient-to-t from-[#0c0c1d] from-50% to-[#5a21b665] z-0'>
         <Skills />
       </section>
       <section id="contact" style={{ scrollSnapAlign: 'none' }} className='bg-[#090909] z-20'>
