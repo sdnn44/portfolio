@@ -46,6 +46,7 @@ export default function Project() {
             {portfolioProjects.map(project => (
                 <ProjectSection project={project} key={project.id} activeCard={activeCard} />
             ))}
+            
         </div>
     );
 }

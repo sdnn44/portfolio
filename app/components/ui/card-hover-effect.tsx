@@ -14,17 +14,17 @@ export const HoverEffect = ({
     items: {
         title: string;
         Icon: IconType;
-        opacity: MotionValue<number>;
-        y: MotionValue<number>;
     }[];
     className?: string;
+    opacity: MotionValue<number>;
+    y: MotionValue<string>;
 }) => {
     let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     return (
         <motion.div
             style={{ opacity, y, zIndex: 0 }}
             className={cn(
-                "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 py-10",
+                "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10",
                 className
             )}
         >
@@ -39,7 +39,7 @@ export const HoverEffect = ({
                     <AnimatePresence>
                         {hoveredIndex === idx && (
                             <motion.span
-                                className="absolute inset-0 h-full w-full bg-violet-950 dark:bg-slate-800/[0.8] block rounded-lg"
+                                className="absolute inset-0 h-full w-full bg-violet-900/20 dark:bg-slate-800/[0.8] block rounded-lg"
                                 layoutId="hoverBackground"
                                 initial={{ opacity: 0 }}
                                 animate={{

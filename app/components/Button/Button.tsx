@@ -18,7 +18,7 @@ export default function Button({ children, className, label, backgroundColor = "
   useEffect(() => {
     timeline.current = gsap.timeline({ paused: true });
     timeline.current
-      .to(circle.current, { top: "-25%", width: "100%", duration: 0.2, ease: "power3.in" }, "enter")
+      .to(circle.current, { top: "-25%", width: "100%", duration: 0.4, ease: "power3.in" }, "enter")
       .to(circle.current, { top: "-150%", width: "100%", duration: 0.25 }, "exit");
   }, []);
 
@@ -40,7 +40,7 @@ export default function Button({ children, className, label, backgroundColor = "
         children
       }
       <div ref={circle} className="w-1/3 h-[150%] absolute top-[120%] left-0 -skew-x-[20deg]" style={{ backgroundColor }}>
-        <div className='flex content-center mt-7 justify-center skew-x-[20deg] text-white'>
+        <div className='flex content-center mt-7 justify-center skew-x-[20deg] text-white font-bold'>
           {label}
         </div>
       </div >

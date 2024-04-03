@@ -23,22 +23,15 @@ export default function Skills({ }: Props) {
 
     const height = useTransform(scrollYProgress, [0, 0.8], [50, 0]);
     return (
-        <div className='pt-20'>
+        <div className='pt-20 relative'>
+            <div className="custom-shape-divider-top-1712163452">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" className="shape-fill"></path>
+                </svg>
+            </div>
             <SectionHeader title="Skills" description="My work experience as a software engineer and working on different companies and projects." />
-
             <div
-                ref={ref}
-                // style={{ opacity, y, zIndex: 0 }}
                 className="mx-auto overflow-hidden max-w-5xl px-8">
-                {/* {skills.map(({ id, title, Icon }) => (
-                    <div key={id} className='flex flex-col items-center justify-center'>
-                        <BackgroundGradient className="padding-8 flex h-32 w-32 items-center justify-center rounded-[1.8rem]  cursor-pointer bg-[#151515] z-10 ">
-                            <Image src={`/${image}`} alt={''} width={500} height={500} className='h-[64px] w-[64px] z-30' />
-                        </BackgroundGradient>
-                        <h3 className="text-xl mt-2 text-white">{name}</h3>
-
-                    </div>
-                ))} */}
                 <HoverEffect items={skills} opacity={opacity} y={y} />
             </div>
 

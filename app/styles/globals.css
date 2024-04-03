@@ -34,7 +34,31 @@ body {
   clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
   height: 100%;
 }
+.skill-section {
+  background-image: linear-gradient(to top, #0c0c1d 50%, #5a21b665 100%);
+  width: 100%;
+  height: 100%;
+}
+.custom-shape-divider-top-1712163452 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
+.custom-shape-divider-top-1712163452 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 63px;
+}
+
+.custom-shape-divider-top-1712163452 .shape-fill {
+  fill: rgb(12, 12, 29);
+}
 .hero-text {
   z-index: 100;
   color: #0c0c1d;
@@ -44,7 +68,6 @@ body {
     -1px 0 0 rgb(91 33 182), /*left */
     0 -1px 0 rgb(91 33 182); /*bottom */
 }
-
 .left:before {
   -webkit-transform: skewX(20deg);
   -moz-transform: skewX(20deg);
