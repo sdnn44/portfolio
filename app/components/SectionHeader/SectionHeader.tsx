@@ -2,7 +2,7 @@ import React from 'react'
 
 type HeaderProps = {
     title: string,
-    description: string
+    description?: string
 }
 
 export default function SectionHeader({ title, description }: HeaderProps) {
