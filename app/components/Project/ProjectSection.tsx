@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion, useMotionValueEvent, useScroll, useSpring, useTransform } from "framer-motion";
 import { Button } from '../ui/moving-border';
 import { SocialIcon } from 'react-social-icons';
+import { DirectionAwareHover } from '../ui/direction-aware-hover';
 
 interface Project {
     id: number;
@@ -58,6 +59,9 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                 className='flex justify-center items-center w-full h-full overflow-hidden'>
                 <div className="h-full max-w-[1100px] m-auto flex gap-[50px] flex-row items-center justify-center z-0">
                     <div ref={ref} className="flex h-2/5 z-0">
+                        {/* <DirectionAwareHover imageUrl={`/${project.img}`}>
+                            <h1>{project.title}</h1>
+                        </DirectionAwareHover> */}
                         <Image src={`/${project.img}`} alt={project.title} width={1249} height={916} className={`z-0 object-cover w-full h-full`} />
                     </div>
                     <motion.div style={{ y }} className='flex flex-1 flex-col gap-[40px] overflow-hidden'>
