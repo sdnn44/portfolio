@@ -20,6 +20,7 @@ export default function Project() {
     const [activeCard, setActiveCard] = React.useState(0);
 
     const portfolioItems = portfolioProjects.length;
+    
     useMotionValueEvent(scrollYProgress, "change", (latest) => {
         const cardsBreakpoints = portfolioProjects.map((_, index) => index / portfolioItems);
         const closestBreakpointIndex = cardsBreakpoints.reduce(
@@ -46,7 +47,7 @@ export default function Project() {
             {portfolioProjects.map(project => (
                 <ProjectSection project={project} key={project.id} activeCard={activeCard} />
             ))}
-            
+
         </div>
     );
 }
