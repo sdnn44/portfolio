@@ -1,11 +1,15 @@
 "use client";
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 import skills from '@/app/utils/technologies';
 import Image from 'next/image';
 import { BackgroundGradient } from '../ui/background-gradient'
 import { HoverEffect } from '../ui/card-hover-effect';
 import SectionHeader from '../SectionHeader/SectionHeader';
+
+import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 type Props = {}
 
@@ -34,8 +38,6 @@ export default function Skills({ }: Props) {
                 className="mx-auto overflow-hidden max-w-5xl px-8">
                 <HoverEffect items={skills} opacity={opacity} y={y} />
             </div>
-
-
             <div ref={ref} className='relative'>
                 <motion.div style={{ height }} className="relative">
                     <div className="z-20 absolute rounded-bl-[50%] rounded-br-[50%] shadow-xl shadow-black h-[1200%] w-[110%] bg-[#0c0c1d] left-[-10%]"></div>
