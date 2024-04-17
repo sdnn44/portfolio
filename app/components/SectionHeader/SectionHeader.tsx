@@ -1,4 +1,6 @@
-import React from 'react'
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
+import React, { useRef } from 'react'
+import TextReveal from '../TextReveal/TextReveal';
 
 type HeaderProps = {
     title: string,
@@ -8,8 +10,12 @@ type HeaderProps = {
 export default function SectionHeader({ title, description }: HeaderProps) {
     return (
         <div className='flex flex-col justify-center items-center gap-4'>
-            <h1 className='text-5xl font-bold tracking-widest hero-text'>{title}</h1>
-            <span className='text-xl font-semibold'>{description}</span>
+            <TextReveal>
+                <h1 className='text-5xl font-bold tracking-widest hero-text'>{title}</h1>
+            </TextReveal>
+            <TextReveal>
+                <span className='text-xl font-semibold'>{description}</span>
+            </TextReveal>
         </div>
-    )
-}
+    );
+};

@@ -79,16 +79,16 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
         const t1 = gsap.timeline({
             scrollTrigger: {
                 trigger: planeRef.current,
-                markers: true,
+                // markers: true,
                 start: "top 100%",
-                end: "top 30%",
+                end: "top 10%",
                 scrub: 1
             }
         });
         t1.to(".plane", { x: 500, duration: 5 })
-            .to(".plane", { x: 800, duration: 3 })
-            .to(".plane", { x: 1500, duration: 3 })
-            .to(".plane", { x: 0, duration: 1 })
+            .to(".plane", { x: 800, duration: 5 })
+            .to(".plane", { x: 1100, duration: 5})
+            .to(".plane", { x: 0, duration: 5 })
             // .to(".plane", { y: 200, duration: 3 })
             // .to(".plane", { x: 0, duration: 2 })
     }, [project]);
@@ -140,7 +140,7 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                     </motion.div>
                 </div>
                     <div ref={planeRef} className='flex w-full'>
-                        <Image alt='' src={"/papersample.png"} width={75} height={75} className="plane" />
+                        <Image alt='' src={"/papersample.png"} width={0} height={0} className="plane" />
                     </div>
             </motion.div>
         </section>

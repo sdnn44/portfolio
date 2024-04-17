@@ -1,8 +1,10 @@
+"use client";
 import React from 'react'
 import Image from 'next/image'
 import HeroBgAnimation from '../Hero/HeroBgAnimation'
 import HeroHeadline from '../Hero/HeroHeadline'
 import Button from '../Button/Button'
+import TextReveal from '../TextReveal/TextReveal'
 
 type Props = {}
 
@@ -21,7 +23,9 @@ export default function Hero({ }: Props) {
             <span className='hero-text z-20'> Łukasz</span><br />
             <span className='text-6xl opacity-30 tracking-widest z-0'>Web Developer</span>
           </h1>
-          <p className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat accusamus reiciendis quibusdam error modi dignissimos tempore, nam soluta, impedit explicabo, ipsa optio sit minus itaque? Modi sed atque ratione!</p>
+          <TextReveal>
+            <p className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat accusamus reiciendis quibusdam error modi dignissimos tempore, nam soluta, impedit explicabo, ipsa optio sit minus itaque? Modi sed atque ratione!</p>
+          </TextReveal>
           <div className='flex gap-10 w-full justify-evenly'>
             <Button className="button left" label='Download CV'>
               <p className='text-[#5a21b5]'>Resume</p>
