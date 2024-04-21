@@ -19,9 +19,14 @@ export default function Hero({ }: Props) {
           {/* <div className="absolute border border-[#333333] rounded-full h-[300px] w-[300px] mt-52 z-10 "></div> */}
         </div>
         <div className='flex flex-col gap-6 relative max-w-[600px]'>
-          <h1 className='text-5xl font-bold z-10'>Hi, I'm
-            <span className='hero-text z-20'> Łukasz</span><br />
-            <span className='text-6xl opacity-30 tracking-widest z-0'>Web Developer</span>
+          <h1 className='text-5xl font-bold z-10'>
+            <TextReveal>
+              <span className='z-20'>Hi, I'm</span>
+              <span className='hero-text z-20'> Łukasz</span>
+            </TextReveal>
+            <TextReveal>
+              <span className='text-6xl opacity-30 tracking-widest z-0'>Web Developer</span>
+            </TextReveal>
           </h1>
           <TextReveal>
             <p className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat accusamus reiciendis quibusdam error modi dignissimos tempore, nam soluta, impedit explicabo, ipsa optio sit minus itaque? Modi sed atque ratione!</p>

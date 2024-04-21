@@ -174,3 +174,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.indicator-transition{
+  transform: scale(0) translateX(-50%);
+  transition: transform 0.2s cubic-bezier (0.76, 0, 0.24, 1);
+}

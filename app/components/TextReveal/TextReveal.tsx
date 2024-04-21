@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { easeIn, motion, useAnimation, useInView } from "framer-motion";
 
 type TextRevealProps = {
-    children: JSX.Element;
+    children: JSX.Element | JSX.Element[];
     width?: "fit-content" | "100%";
 }
 
