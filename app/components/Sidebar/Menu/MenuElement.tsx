@@ -12,7 +12,6 @@ type MenuItemProps = {
 const variants = {
     open: {
         y: 0,
-        opacity: 1,
         transition: {
             y: { stiffness: 1000, velocity: -100 }
         }
@@ -28,13 +27,6 @@ const variants = {
 
 export default function MenuElement({ id, title, link, icon }: MenuItemProps) {
     return (
-        // <div className='absolute w-full h-screen flex flex-col items-center justify-center gap-5'>
-        //     {menu.map((item) => {
-        //         return (
-        //             <a href={item.link} key={item.id} className='text-3xl'>{item.title}</a>
-        //         )
-        //     })}
-        // </div>
         <div className='p-3'>
             <motion.a
                 variants={variants}

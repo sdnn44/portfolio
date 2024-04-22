@@ -66,7 +66,7 @@ export const HoverEffect = ({
                                 <motion.span
                                     variants={{
                                         initial: { x: 0 },
-                                        whileHover: { x: -16 },
+                                        whileHover: { x: -7 },
                                     }}
                                     transition={{
                                         type: "spring",
@@ -79,10 +79,10 @@ export const HoverEffect = ({
                                         <motion.span
                                             variants={{
                                                 initial: { x: 0 },
-                                                whileHover: { x: 16 },
+                                                whileHover: { x: 7 },
                                             }}
                                             transition={{ type: "spring" }}
-                                            className="inline-block cursor-pointer"
+                                            className="inline-block cursor-pointer mx-[1.2px]"
                                             key={i}
                                         >
                                             {l}

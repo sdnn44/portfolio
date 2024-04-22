@@ -4,7 +4,7 @@ export const menu = [
     id: 1,
     title: "Home",
     icon: home,
-    link: "#home",
+    link: "#",
   },
   {
     id: 2,
