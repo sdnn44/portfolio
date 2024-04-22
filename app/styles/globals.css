@@ -85,7 +85,7 @@ body {
   z-index: 100;
   color: #0c0c1d;
   text-shadow: 
-    1px 0 0 rgb(91 33 182), /*right */
+    1px 0 0 #5b21b6, /*right */
     0 1px 0 rgb(91 33 182), /*top */
     -1px 0 0 rgb(91 33 182), /*left */
     0 -1px 0 rgb(91 33 182); /*bottom */
@@ -174,8 +174,31 @@ body {
     text-wrap: balance;
   }
 }
-
+@layer utilities {
+  .nav-item {
+    display: flex;
+    position: relative;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+@layer utilities {
+  .indicator {
+    width: 6px;
+    height: 6px;
+    background: #7c43d8;
+    position: absolute;
+    border-radius: 50%;
+    top: 80%;
+    left: 50%;
+  }
+}
 .indicator-transition{
   transform: scale(0) translateX(-50%);
-  transition: transform 0.2s cubic-bezier (0.76, 0, 0.24, 1);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.30, 1);
+}
+.hover-target:hover .indicator-transition {
+  transform: scale(1) translateX(-50%);
+  /* transition: transform 0.3s ease; */
 }
