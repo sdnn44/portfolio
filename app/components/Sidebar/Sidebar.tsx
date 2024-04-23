@@ -23,7 +23,7 @@ export default function Sidebar({ }: Props) {
   return (
     <div className="flex justify-center items-center h-full p-6 z-20 text-white">
       <div className="logo absolute top-20 text-3xl capitalize">
-        <ToggleButton setOpen={setOpen} />
+        {/* <ToggleButton setOpen={setOpen} /> */}
       </div>
       <motion.ul
         variants={variants}
