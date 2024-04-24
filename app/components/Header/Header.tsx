@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import React, { useState } from 'react'
 import { SocialIcon } from 'react-social-icons'
+import FollowCursor from '../FollowCursor/FollowCursor';
 import AnimatedSidebar from '../Sidebar/AnimatedSidebar'
 import HeaderItem from './HeaderItem';
 type Props = {}
@@ -20,9 +21,9 @@ export default function Header({ }: Props) {
             </div>
 
             <div className='flex flex-row items-center '>
-                <SocialIcon url="https://twitter.com" fgColor='white' bgColor='transparent' />
-                <SocialIcon url="https://discord.com" fgColor='white' bgColor='transparent' />
-                <SocialIcon url="https://github.com" fgColor='white' bgColor='transparent' />
+                <FollowCursor><SocialIcon url="https://twitter.com" fgColor='white' bgColor='transparent' /></FollowCursor>
+                <FollowCursor><SocialIcon url="https://discord.com" fgColor='white' bgColor='transparent' /></FollowCursor>
+                <FollowCursor><SocialIcon url="https://github.com" fgColor='white' bgColor='transparent' /></FollowCursor>
             </div>
 
 
