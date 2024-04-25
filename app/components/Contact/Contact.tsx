@@ -2,6 +2,7 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 import { BackgroundBeams } from '../ui/background-beams';
+import ContactForm from './ContactForm';
 
 type Props = {}
 
@@ -9,7 +10,7 @@ export default function Contact({ }: Props) {
 
     return (
         // h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased
-        <div className='wrapper grid md:grid-cols-2 relative max-w-[1100px] m-auto py-60 gap-5 justify-center z-10 antialiased'>
+        <div className='wrapper h-full grid md:grid-cols-2 relative max-w-[1100px] m-auto py-60 gap-5 justify-center z-10 antialiased items-center'>
             <div className='flex flex-col max-w-96 gap-2'>
                 <h5 className='text-5xl font-bold text-white my-2'>
                     Let's talk!
@@ -18,31 +19,29 @@ export default function Contact({ }: Props) {
                     {" "}
                     Im currently looking for opprtinities lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, asperiores accusamus at, ipsa ab temporibus veritatis aperiam itaque iure illum quam illo. Qui sint, corrupti assumenda deserunt dolore maiores molestias.
                 </p>
-                <div className="flex flex-row gap-2">
-                    <SocialIcon url="https://discord.com" fgColor='white' bgColor='transparent' />
-                    <SocialIcon url="https://github.com" fgColor='white' bgColor='transparent' />
+                <div className="flex flex-col gap-1">
+                    <div className='flex flex-row items-center gap-2'>
+                        <SocialIcon network="whatsapp" fgColor='white' bgColor='transparent' />
+                        <p>+48 604 590 321</p>
+                    </div>
+                    <div className='flex flex-row items-center gap-2'>
+                        <SocialIcon network="email" fgColor='white' bgColor='transparent' />
+                        <p>slidennnq@poczta.com</p>
+                    </div>
+                    <div className='flex flex-row items-center gap-2'>
+                        <SocialIcon network="discord" fgColor='white' bgColor='transparent' />
+                        <p>rip#2179</p>
+                    </div>
+                    <div className='flex flex-row items-center gap-2'>
+                        <SocialIcon url="https://github.com/sdnn44" fgColor='white' bgColor='transparent' />
+                        <a href='https://github.com/sdnn44'>sdnn44</a>
+                    </div>
                 </div>
             </div>
-            <div>
-                <form action="" className='flex flex-col'>{/*  */}
-                    <div className='mb-6'>
-                        <label htmlFor="email" className='text-white block mb-2 text-sm font-medium'>Email</label>
-                        <input type='email' id='email' required placeholder='yourmail@gmail.com' className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' />
-                    </div>
-                    <div className='mb-6'>
-                        <label htmlFor="subject" className='text-white block mb-3 text-sm font-medium'>Subject</label>
-                        <input type='text' id='subject' required placeholder='Subject' className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5' />
-                    </div>
-                    <div className='mb-6'>
-                        <label htmlFor="message" className='text-white block mb-3 text-sm font-medium'>Message</label>
-                        <textarea name="message" id="message" required placeholder='Lets talk about.. ' className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'></textarea>
-                    </div>
-                    <button type='submit' className='bg-purple-500 hover:bg-purple-600 font-medium py-2.5 px-5 rounded-lg w-full'>
-                        Send message
-                    </button>
-                </form>
+            <div className='z-40'>
+                <ContactForm />
             </div>
-            <BackgroundBeams />
+            {/* <BackgroundBeams /> */}
         </div>
     )
 }

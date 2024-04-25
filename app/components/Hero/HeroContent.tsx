@@ -17,7 +17,7 @@ const HeroContent = (props: Props) => {
                 </TextReveal>
             </h1>
             <TextReveal>
-                <p className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat accusamus reiciendis quibusdam error modi dignissimos tempore, nam soluta, impedit explicabo, ipsa optio sit minus itaque? Modi sed atque ratione!</p>
+                <p className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elitmet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat accusamus reiciendis quibusdam error modi dignissimos tempore, nam soluta, impedit explicabo, ipsa optio sit minus itaque? Modi sed atque ratione!</p>
             </TextReveal>
             <div className='flex gap-10 w-full justify-evenly'>
                 <Button className="button left" label='Download CV'>

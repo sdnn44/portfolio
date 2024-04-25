@@ -32,13 +32,13 @@ export default function ExperienceCard({ experience }: ExperienceProps) {
                 className="vertical-timeline-element--work"
                 icon={
                     <Image
-                        width={300}
-                        height={300}
+                        width={500}
+                        height={500}
                         alt={experience.company}
                         style={{
                             width: "100%",
                             height: "100%",
-                            borderRadius: "50%",
+                            borderRadius: "100%",
                             objectFit: "cover"
                         }}
                         src={`/${experience.img}`}
@@ -47,21 +47,20 @@ export default function ExperienceCard({ experience }: ExperienceProps) {
                 contentStyle={{
                     display: "flex",
                     flexDirection: "column",
-                    gap: "15px",
-                    background: "#1d1836",
+                    gap: "12px",
+                    background: "#0c0c1d",
                     color: "#fff",
-                    boxShadow: "rgba(23, 92, 230, 0.15) 0px 4px 24px",
-                    backgroundColor: "rgba(17, 25, 40, 0.83)",
-                    border: "1px solid rgba(255, 255, 255, 0.125)",
+                    boxShadow: "rgba(76,29,149, 0.35) 0px 4px 20px",
+                    border: "1px solid rgba(76,29,149, 0.6)",
                     borderRadius: "7px",
                 }}
                 contentArrowStyle={{
-                    borderRight: "7px solid rgba(255, 255, 255, 0.3)",
+                    borderRight: "7px solid rgba(76,29,149, 0.6)",
                 }}
                 date={experience.date}
             >
                 <div className='flex flex-row items-center gap-4'>
-                    <Image src={`/${experience.img}`} alt={''} width={300} height={300} className='rounded-xl w-[60px] h-[60px]' />
+                    <Image src={`/${experience.img}`} alt={''} width={300} height={300} className='rounded-xl w-[60px] h-[60px] border-2 border-violet-900/40' />
                     <div className='flex flex-col justify-start items-start'>
                         <div className='font-semibold text-gray-300'>{experience.company}</div>
                         <div className='font-medium text-[14px] text-gray-500'>{experience.role}</div>

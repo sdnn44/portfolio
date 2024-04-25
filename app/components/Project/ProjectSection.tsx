@@ -5,7 +5,7 @@ import { motion, useMotionValueEvent, useScroll, useSpring, useTransform } from 
 import { SocialIcon } from 'react-social-icons';
 import { DirectionAwareHover } from '../ui/direction-aware-hover';
 import { IconType } from 'react-icons';
-import MovingButton from '../Button/MovingButton';
+import MobingBorder from '../Button/MovingBorder';
 
 import { projectStyles } from '../../utils/project-themes';
 
@@ -121,21 +121,21 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                         </DirectionAwareHover>
                         {/* <Image src={`/${project.img}`} alt={project.title} width={1249} height={916} className={`z-0 object-cover w-full h-full`} /> */}
                     </div>
-                    <motion.div style={{ y }} className='flex flex-1 flex-col gap-[40px] overflow-hidden'>
+                    <motion.div style={{ y }} className='flex flex-1 flex-col gap-[40px]'>
                         <div className='flex flex-row items-center gap-2'>
                             <h2 className={`text-4xl text-bold underline underline-offset-4 ${projectStyleVar.underlineColors}`}>{project.title}</h2>
                             <span className={`text-4xl text-bold ${projectStyleVar.closeTag}`}>{'/>'}</span>
                         </div>
                         <p className='text-md text-gray-400'>{project.description}</p>
                         <div className='flex justify-around'>
-                            <MovingButton className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
+                            <MobingBorder className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
                                 <SocialIcon url="https://github.com" fgColor='white' bgColor='transparent' />
                                 <span className='flex tracking-wider font-medium'>Live demo</span>
-                            </MovingButton>
-                            <MovingButton className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
+                            </MobingBorder>
+                            <MobingBorder className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
                                 <SocialIcon url="https://github.com" fgColor='white' bgColor='transparent' />
                                 <span className='flex tracking-wider font-medium'>Code</span>
-                            </MovingButton>
+                            </MobingBorder>
                         </div>
                     </motion.div>
                 </div>
