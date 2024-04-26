@@ -4,7 +4,7 @@ type Props = {}
 
 const HeroBgAnimation = (props: Props) => {
     return (
-        <div className='w-[500px] h-[550px] absolute z-0'>
+        <div className='w-[240px] h-[300px] md:w-[500px] md:h-[550px] absolute z-0'>
             <svg
                 className="BgAnimation__svg"
                 viewBox="0 0 602 602"

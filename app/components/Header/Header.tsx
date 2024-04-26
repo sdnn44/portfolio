@@ -13,14 +13,14 @@ export default function Header({ }: Props) {
         <header className='top-0 flex items-start justify-end max-w-5xl mx-auto p-5 xl:items-center'>
             <AnimatedSidebar />
 
-            <div className='flex w-full'>
+            <div className='md:flex w-full hidden'>
                 <HeaderItem href="#about">About</HeaderItem>
                 <HeaderItem href="#experience">Experience</HeaderItem>
                 <HeaderItem href="#projects">Projects</HeaderItem>
                 <HeaderItem href="#contact">Contact</HeaderItem>
             </div>
 
-            <div className='flex flex-row items-center '>
+            <div className='flex flex-row items-center'>
                 <FollowCursor><SocialIcon url="https://twitter.com" fgColor='white' bgColor='transparent' /></FollowCursor>
                 <FollowCursor><SocialIcon url="https://discord.com" fgColor='white' bgColor='transparent' /></FollowCursor>
                 <FollowCursor><SocialIcon url="https://github.com" fgColor='white' bgColor='transparent' /></FollowCursor>
