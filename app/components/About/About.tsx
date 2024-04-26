@@ -27,8 +27,7 @@ export default function About({ }: Props) {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className='relative w-full h-[600px] opacity-90'
-        >
+          className='relative w-full h-[600px] opacity-90 hidden md:flex'>
           <motion.img
             {...imageAnimation}
             src={'/about-pic-7.jpg'} width={340} height={340} alt={''} className='shadow-sm shadow-violet-900 absolute top-13 right-4 -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-3xl md:w-72 md:h-72 xl-w-[500px] xl-h-[600px] z-10' />

@@ -7,31 +7,31 @@ export default function AboutContent({ }: Props) {
     return (
         <>
             <TextReveal>
-                <h4 className='text-2xl font-semibold'>
+                <h4 className='text-xl md:text-2xl font-semibold'>
                     Here is a <span className='tracking-widest underline decoration-violet-800'>little</span> background
                 </h4>
             </TextReveal>
             <TextReveal>
-                <p className='text-base'>Ipsum impedit voluptate nisi! Quos dolore, dolores doloribus debitis minima alias eum quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deleniti omnis atque sunt ipsum sequi excepturi commodi illo, error vel repellendus impedit ipsam rem sit quas iste quae autem repudiandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                <p className='text-sm md:text-base'>Ipsum impedit voluptate nisi! Quos dolore, dolores doloribus debitis minima alias eum quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deleniti omnis atque sunt ipsum sequi excepturi commodi illo, error vel repellendus impedit ipsam rem sit quas iste quae autem repudiandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
             </TextReveal>
             <TextReveal>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p className='text-sm md:text-base'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </TextReveal>
-            <div className='flex flex-col md:flex-row w-full gap-4 md:gap-8'>
-                <div className='flex flex-col p-4 gap-5'>
+            <div className='flex flex-row md:flex-row w-full md:gap-8'>
+                <div className='flex flex-col p-4 gap-5 md:gap-5'>
                     <TextReveal>
-                        <div className='flex flex-col'><strong className='uppercase text-violet-800 tracking-widest'>Name:</strong> <span>Lucas</span></div>
+                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Name:</strong> <span className='text-base'>Lucas</span></div>
                     </TextReveal>
                     <TextReveal>
-                        <div className='flex flex-col'><strong className='uppercase text-violet-800 tracking-widest'>Email:</strong> <span>lucaslucaslucas@wp.pl</span></div>
+                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Email:</strong> <span className='text-base'>lucaslucaslucas@wp.pl</span></div>
                     </TextReveal>
                 </div>
-                <div className='flex flex-col p-4 gap-5'>
+                <div className='flex flex-col p-4 gap-5 md:gap-5'>
                     <TextReveal>
-                        <div className='flex flex-col'><strong className='uppercase text-violet-800 tracking-widest'>Education:</strong> <span>Wyzsza szkola robienia halasu</span></div>
+                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Education:</strong> <span className='text-base'>Wyzsza szkola </span></div>
                     </TextReveal>
                     <TextReveal>
-                        <div className='flex flex-col'><strong className='uppercase text-violet-800 tracking-widest'>Employment:</strong> <span>Open</span></div>
+                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Employment:</strong> <span className='text-base'>Open</span></div>
                     </TextReveal>
                 </div>
             </div>

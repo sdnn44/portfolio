@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion, useMotionValueEvent, useScroll, useSpring, useTransform } from "framer-motion";
 import { SocialIcon } from 'react-social-icons';
 import { DirectionAwareHover } from '../ui/direction-aware-hover';
@@ -31,6 +31,19 @@ interface SectionProps {
 
 const ProjectSection = ({ project, activeCard }: SectionProps) => {
     const ref = useRef<HTMLDivElement | any>(null);
+
+    // Animation state based on window width
+    const [enableAnimation, setEnableAnimation] = useState(false);
+
+    // Checking window width
+    useEffect(() => {
+        const updateSize = () => {
+            setEnableAnimation(window.innerWidth > 768); // Enable animation if window width is more than 768px
+        };
+        window.addEventListener('resize', updateSize);
+        updateSize(); // Set initial size
+        return () => window.removeEventListener('resize', updateSize);
+    }, []);/*  */
 
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -87,10 +100,10 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
         });
         t1.to(".plane", { x: 500, duration: 5 })
             .to(".plane", { x: 800, duration: 5 })
-            .to(".plane", { x: 1100, duration: 5})
+            .to(".plane", { x: 1100, duration: 5 })
             .to(".plane", { x: 0, duration: 5 })
-            // .to(".plane", { y: 200, duration: 3 })
-            // .to(".plane", { x: 0, duration: 2 })
+        // .to(".plane", { y: 200, duration: 3 })
+        // .to(".plane", { x: 0, duration: 2 })
     }, [project]);
 
     return (
@@ -102,8 +115,8 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                     backgroundColor: projectStyle.backgroundColors,
                 }}
                 className='flex flex-col justify-center items-center w-full h-full overflow-hidden'>
-                <div className="h-full max-w-[1100px] m-auto flex gap-[50px] flex-row items-center justify-center z-0">
-                    <div ref={ref} className="flex h-2/5 w-1/2 z-0">
+                <div className="h-full max-w-[1100px] m-auto flex gap-[50px] flex-col md:flex-row items-center justify-center z-0">
+                    <div ref={ref} className="flex h-2/5 w-full md:w-1/2 z-0">
                         <DirectionAwareHover imageUrl={`/${project.img}`}>
                             <div className='space-y-5'>
                                 <h1 className='text-2xl font-bold'>{project.title}</h1>
@@ -121,7 +134,7 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                         </DirectionAwareHover>
                         {/* <Image src={`/${project.img}`} alt={project.title} width={1249} height={916} className={`z-0 object-cover w-full h-full`} /> */}
                     </div>
-                    <motion.div style={{ y }} className='flex flex-1 flex-col gap-[40px]'>
+                    <motion.div style={enableAnimation ? { y } : {}} className='flex flex-1 flex-col gap-[40px] transform-none'>
                         <div className='flex flex-row items-center gap-2'>
                             <h2 className={`text-4xl text-bold underline underline-offset-4 ${projectStyleVar.underlineColors}`}>{project.title}</h2>
                             <span className={`text-4xl text-bold ${projectStyleVar.closeTag}`}>{'/>'}</span>
@@ -139,9 +152,9 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                         </div>
                     </motion.div>
                 </div>
-                    <div ref={planeRef} className='flex w-full'>
-                        <Image alt='' src={"/papersample.png"} width={0} height={0} className="plane" />
-                    </div>
+                <div ref={planeRef} className='flex w-full'>
+                    <Image alt='' src={"/papersample.png"} width={0} height={0} className="plane" />
+                </div>
             </motion.div>
         </section>
     );
