@@ -10,7 +10,7 @@ export default function Contact({ }: Props) {
 
     return (
         // h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased
-        <div className='wrapper h-full grid md:grid-cols-2 relative max-w-[1100px] m-auto py-60 gap-5 justify-center z-10 antialiased items-center'>
+        <div className='wrapper h-full grid md:grid-cols-2 relative max-w-[1100px] m-auto py-60 gap-5 justify-center z-10 antialiased items-center px-5 md:px-0'>
             <div className='flex flex-col max-w-96 gap-2'>
                 <h5 className='text-5xl font-bold text-white my-2'>
                     Let's talk!

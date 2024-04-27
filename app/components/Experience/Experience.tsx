@@ -21,7 +21,7 @@ export default function Experiance({ }: Props) {
     return (
         <div className='pb-10'>
             <SectionHeader title="Experiance" description="My work experience as a software engineer and working on different companies and projects." />
-            <div className='w-full flex justify-center items-center mx-auto mt-24 flex-col max-w-[1000px]'>
+            <div className='w-full flex justify-center items-center mx-auto mt-5 md:mt-24 flex-col max-w-[1000px]'>
                 {/* <Timeline position="alternate">
                     {experiences.map((experience, index) => (
                         <TimelineItem>

@@ -25,11 +25,11 @@ export default function HeroContent({
             <TextReveal>
                 <p className='text-sm md:text-lg text-center mr-5 ml-5 md:mr-0 md:ml-0 md:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elitmet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat accusamus reiciendis quibusdam error modi dignissimos tempore, nam soluta, impedit explicabo, ipsa optio sit minus itaque? Modi sed atque ratione!</p>
             </TextReveal>
-            <div className='flex gap-10 w-full justify-evenly'>
-                <Button className="button left w-[7rem] md:w-[11rem]" label='Download CV'>
+            <div className='flex gap-5 md:gap-10 w-full justify-evenly z-10'>
+                <Button className="button left w-[7rem] md:w-[11rem] px-[10px] py-[15px]" label='Download CV'>
                     <p className='text-[#5a21b5]'>Resume</p>
                 </Button>
-                <Button className="button left w-[7rem] md:w-[11rem]" label='Get in touch'>
+                <Button className="button left w-[7rem] md:w-[11rem] px-[10px] py-[15px]" label='Get in touch'>
                     <p className='text-[#5a21b5]'>Contact</p>
                 </Button>
                 {/* <a href='#' className='button left'>Contact</a> */}
