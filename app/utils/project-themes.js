@@ -6,6 +6,7 @@ export const projectStyles = [
         underlineColors: "decoration-[#5b21b6]",
         closeTag: "text-[#5b21b6]",
         border: "bg-[conic-gradient(#7a3ae1_20deg,transparent_120deg)]",
+        textColor: "text-[#5b21b6]",
     },
     {
         backgroundColors: "rgb(43, 22, 67)",
@@ -14,6 +15,7 @@ export const projectStyles = [
         underlineColors: "decoration-[#764ef9]",
         closeTag: "text-[#764ef9]",
         border: "bg-[conic-gradient(#9375f7_20deg,transparent_120deg)]",
+        textColor: "text-[#764ef9]",
     },
     {
         backgroundColors: "rgb(27, 26, 33)",
@@ -22,6 +24,7 @@ export const projectStyles = [
         underlineColors: "decoration-[#0057be]",
         closeTag: "text-[#0057be]",
         border: "bg-[conic-gradient(#4191f2_20deg,transparent_120deg)]",
+        textColor: "text-[#0057be]",
     },
     {
         backgroundColors: "rgb(15, 17, 23)",
@@ -30,6 +33,7 @@ export const projectStyles = [
         underlineColors: "decoration-[#6b21a8]",
         closeTag: "text-[#6b21a8]",
         border: "bg-[conic-gradient(#9b3ce9_20deg,transparent_120deg)]",
+        textColor: "text-[#6b21a8]",
     },
     {
         backgroundColors: "var(--neutral-900)",
@@ -38,6 +42,7 @@ export const projectStyles = [
         underlineColors: "decoration-[#0057be]",
         closeTag: "text-[#0057be]",
         border: "bg-[conic-gradient(#4191f2_20deg,transparent_120deg)]",
+        textColor: "text-[#0057be]",
     },
     {
         backgroundColors: "rgb(12, 12, 29)",
@@ -46,5 +51,6 @@ export const projectStyles = [
         underlineColors: "decoration-[#6b21a8]",
         closeTag: "text-[#6b21a8]",
         border: "bg-[conic-gradient(#7a3ae1_20deg,transparent_120deg)]",
+        textColor: "text-[#6b21a8]",
     },
 ];

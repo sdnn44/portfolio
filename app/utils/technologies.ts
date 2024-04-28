@@ -67,6 +67,26 @@ const skills: Skill[] = [
         title: "Nextjs",
         Icon: SiReact
     },
+    {
+        id: 13,
+        title: "Nextjs",
+        Icon: SiReact
+    },
+    {
+        id: 14,
+        title: "Nextjs",
+        Icon: SiReact
+    },
+    {
+        id: 15,
+        title: "Nextjs",
+        Icon: SiReact
+    },
+    {
+        id: 15,
+        title: "Nextjs",
+        Icon: SiReact
+    },
 ];
 
 export default skills;

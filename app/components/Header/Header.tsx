@@ -21,14 +21,14 @@ export default function Header({ }: Props) {
             </div>
 
             <div className='flex flex-row items-center'>
-                <FollowCursor><SocialIcon url="https://twitter.com" fgColor='white' bgColor='transparent' /></FollowCursor>
-                <FollowCursor><SocialIcon url="https://discord.com" fgColor='white' bgColor='transparent' /></FollowCursor>
-                <FollowCursor><SocialIcon url="https://github.com" fgColor='white' bgColor='transparent' /></FollowCursor>
+                <FollowCursor><SocialIcon url="https://twitter.com" fgColor='currentColor' bgColor='transparent' className='text-white hover:text-[#7969a9] duration-75' /></FollowCursor>
+                <FollowCursor><SocialIcon url="https://discord.com" fgColor='currentColor' bgColor='transparent' className='text-white hover:text-[#7969a9] duration-75'  /></FollowCursor>
+                <FollowCursor><SocialIcon url="https://github.com" fgColor='currentColor' bgColor='transparent' className='text-white hover:text-[#7969a9] duration-75'  /></FollowCursor>
             </div>
 
 
             {/* <div className='flex flex-row items-center text-gray-300 cursor-pointer'>
-                <SocialIcon className='cursor-pointer' network='email' fgColor='white' bgColor='transparent' />
+                <SocialIcon className='cursor-pointer' network='email' fgColor='currentColor' bgColor='transparent' className='text-white hover:text-[#7969a9] duration-75'  />
                 <p className='uppercase hidden md:inline-flex text-sm text-white'>Get in touch</p>
             </div> */}
         </header>

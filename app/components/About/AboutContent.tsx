@@ -20,18 +20,18 @@ export default function AboutContent({ }: Props) {
             <div className='flex flex-row md:flex-row w-full md:gap-8'>
                 <div className='flex flex-col p-4 gap-5 md:gap-5'>
                     <TextReveal>
-                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Name:</strong> <span className='text-base'>Lucas</span></div>
+                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Name:</strong> <span className='text-sm'>Lucas</span></div>
                     </TextReveal>
                     <TextReveal>
-                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Email:</strong> <span className='text-base'>lucaslucaslucas@wp.pl</span></div>
+                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Email:</strong> <span className='text-sm'>lucaslucaslucas@wp.pl</span></div>
                     </TextReveal>
                 </div>
                 <div className='flex flex-col p-4 gap-5 md:gap-5'>
                     <TextReveal>
-                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Education:</strong> <span className='text-base'>Wyzsza szkola </span></div>
+                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Education:</strong> <span className='text-sm'>Wyzsza szkola </span></div>
                     </TextReveal>
                     <TextReveal>
-                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Employment:</strong> <span className='text-base'>Open</span></div>
+                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Employment:</strong> <span className='text-sm'>Open</span></div>
                     </TextReveal>
                 </div>
             </div>

@@ -114,7 +114,7 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                     opacity: 1,
                     backgroundColor: projectStyle.backgroundColors,
                 }}
-                className='flex flex-col justify-center items-center w-full h-full overflow-hidden'>
+                className='flex flex-col justify-center items-center w-full h-full overflow-hidden px-3'>
                 <div className="h-full max-w-[1100px] m-auto flex md:gap-[50px] flex-col md:flex-row items-center justify-center pt-36 md:pt-0 z-0">
                     <div ref={ref} className="flex md:h-2/5 w-full md:w-1/2 z-0">
                         <DirectionAwareHover imageUrl={`/${project.img}`}>
@@ -136,10 +136,10 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                     </div>
                     <motion.div style={enableAnimation ? { y } : {}} className='flex flex-1 flex-col justify-center items-center md:items-start gap-[15px] md:gap-[40px] transform-none'>
                         <div className='flex flex-row items-center gap-2'>
-                            <h2 className={`text-3xl md:text-4xl text-bold underline underline-offset-4 ${projectStyleVar.underlineColors}`}>{project.title}</h2>
-                            <span className={`text-3xl md:text-4xl text-bold ${projectStyleVar.closeTag}`}>{'/>'}</span>
+                            <h2 className={`text-3xl md:text-3xl lg:text-4xl text-bold underline underline-offset-4 ${projectStyleVar.underlineColors}`}>{project.title}</h2>
+                            <span className={`text-3xl md:text-3xl lg:text-4xl text-bold ${projectStyleVar.closeTag}`}>{'/>'}</span>
                         </div>
-                        <p className='text-base md:text-base text-gray-400 text-center md:text-left px-5 md:px-0'>{project.description}</p>
+                        <p className='text-base md:text-sm lg:text-base text-gray-400 text-center md:text-left px-5 md:px-0'>{project.description}</p>
                         <div className='flex w-full'>
                             <MobingBorder className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
                                 <SocialIcon url="https://github.com" fgColor='white' bgColor='transparent' />
