@@ -30,7 +30,7 @@ export default function Skills({ }: Props) {
     return (
         <div className='pt-20 relative'>
             <SectionWaveDivider />
-            <SectionHeader title="Skills" description="My work experience as a software engineer and working on different companies and projects." />
+            <SectionHeader title="Skills" description="I specialize in web technologies while maintaining a solid understanding of the basics in C++, Java and Python." />
             <div
                 className="mx-auto overflow-hidden max-w-5xl px-8">
                 <HoverEffect items={skills} opacity={opacity} y={y} />

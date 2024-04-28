@@ -16,9 +16,11 @@ export default function Contact({ }: Props) {
                     Let's talk!
                 </h5>
                 <p className='text-gray'>
-                    {" "}
-                    Im currently looking for opprtinities lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, asperiores accusamus at, ipsa ab temporibus veritatis aperiam itaque iure illum quam illo. Qui sint, corrupti assumenda deserunt dolore maiores molestias.
+                    I'm currently looking for opportunities to collaborate and bring your vision to life. Whether you need a sleek and modern website, a robust e-commerce platform, or a dynamic web application, I'm here to help.
                 </p>
+                {/* <p className='text-gray'>
+                   Reach out today, and let's turn your ideas into reality!
+                </p> */}
                 <div className="flex flex-col gap-1">
                     <div className='flex flex-row items-center gap-2'>
                         <SocialIcon network="whatsapp" fgColor='white' bgColor='transparent' />

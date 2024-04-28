@@ -14,7 +14,7 @@ export default function SectionHeader({ title, description }: HeaderProps) {
                 <h1 className='text-4xl md:text-5xl font-bold tracking-widest hero-text'>{title}</h1>
             </TextReveal>
             <TextReveal>
-                <p className='text-base md:text-xl font-semibold px-5 text-center'>{description}</p>
+                <p className='text-base md:text-xl px-5 text-center'>{description}</p>
             </TextReveal>
         </div>
     );

@@ -20,22 +20,8 @@ type Props = {}
 export default function Experiance({ }: Props) {
     return (
         <div className='pb-10'>
-            <SectionHeader title="Experiance" description="My work experience as a software engineer and working on different companies and projects." />
+            <SectionHeader title="Experiance" description="My educational background, combined with my experience as a programmer across various projects and companies, has significantly shaped my skill set." />
             <div className='w-full flex justify-center items-center mx-auto mt-5 md:mt-24 flex-col max-w-[1000px]'>
-                {/* <Timeline position="alternate">
-                    {experiences.map((experience, index) => (
-                        <TimelineItem>
-                            <TimelineSeparator>
-                                <TimelineDot variant='outlined' color='secondary' />
-                                {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
-                            </TimelineSeparator>
-                            <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                <ExperienceCard experience={experience} key={experience.id} />
-                            </TimelineContent>
-                        </TimelineItem>
-                    ))}
-                </Timeline> */}
-
                 <VerticalTimeline>
                     {experiences.map((experience, index) => (
                         <ExperienceCard

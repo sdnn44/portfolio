@@ -1,5 +1,5 @@
 import { IconType } from "react-icons";
-import { SiCss3, SiFirebase, SiGit, SiHtml5, SiJavascript, SiMongodb, SiMui, SiNextdotjs, SiNodedotjs, SiPostgresql, SiReact, SiRedux, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiCplusplus, SiCss3, SiFirebase, SiGit, SiHtml5, SiJavascript, SiMongodb, SiMui, SiNextdotjs, SiNodedotjs, SiPostgresql, SiReact, SiRedux, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
 interface Skill {
@@ -55,8 +55,8 @@ const skills: Skill[] = [
     },
     {
         id: 10,
-        title: "Firebase",
-        Icon: SiFirebase
+        title: "C++",
+        Icon: SiCplusplus
     },
     {
         id: 11,
@@ -65,8 +65,8 @@ const skills: Skill[] = [
     },
     {
         id: 12,
-        title: "Postgres",
-        Icon: SiPostgresql
+        title: "Firebase",
+        Icon: SiFirebase
     },
     {
         id: 13,
