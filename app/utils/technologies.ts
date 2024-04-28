@@ -1,5 +1,6 @@
 import { IconType } from "react-icons";
-import { SiReact } from "react-icons/si";
+import { SiCss3, SiFirebase, SiGit, SiHtml5, SiJavascript, SiMongodb, SiMui, SiNextdotjs, SiNodedotjs, SiPostgresql, SiReact, SiRedux, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 
 interface Skill {
     id: number;
@@ -14,78 +15,78 @@ const skills: Skill[] = [
     },
     {
         id: 2,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "Next.js",
+        Icon: SiNextdotjs
     },
     {
         id: 3,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "HTML5",
+        Icon: SiHtml5
     },
     {
         id: 4,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "CSS3",
+        Icon: SiCss3
     },
     {
         id: 5,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "Javascript",
+        Icon: SiJavascript
     },
     {
         id: 6,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "Typescript",
+        Icon: SiTypescript
     },
     {
         id: 7,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "Node.js",
+        Icon: SiNodedotjs
     },
     {
         id: 8,
-        title: "Nextjs",
+        title: "Python",
         Icon: SiReact
     },
     {
         id: 9,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "Java",
+        Icon: FaJava
     },
     {
         id: 10,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "Firebase",
+        Icon: SiFirebase
     },
     {
         id: 11,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "MongoDB",
+        Icon: SiMongodb
     },
     {
         id: 12,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "Postgres",
+        Icon: SiPostgresql
     },
     {
         id: 13,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "Redux",
+        Icon: SiRedux
     },
     {
         id: 14,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "Tailwind CSS",
+        Icon: SiTailwindcss
     },
     {
         id: 15,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "MUI",
+        Icon: SiMui
     },
     {
         id: 15,
-        title: "Nextjs",
-        Icon: SiReact
+        title: "GIT",
+        Icon: SiGit
     },
 ];
 
