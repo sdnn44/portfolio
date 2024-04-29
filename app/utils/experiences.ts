@@ -61,8 +61,6 @@ const experiences: ExperienceProps[] = [
     company: "KOM-AREK",
     date: ["2016"],
     desc: "I was responsible for monitoring and maintaining the technical condition of computers, installations, and ICT devices. This included conducting repairs and performing maintenance on computer equipment and peripheral devices. I collaborated closely and systematically with superiors and other organizational units within the Company. Moreover, I ensured that all relevant documentation was properly maintained and updated as required.",
-   
-    // doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
   },
 ];
 
