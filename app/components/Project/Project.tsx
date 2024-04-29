@@ -43,7 +43,7 @@ export default function Project() {
     return (
         <div ref={ref} className='relative'>
             <motion.div style={{ opacity }} className='text-center sticky b-0 top-0 left-0 pt-3 md:pt-6 z-10'>
-                <h1 className={`${projectStyle.textColor} text-4xl md:text-5xl font-bold tracking-wider`}>Recent projects</h1>
+                <h1 className={`text-gray-300 text-4xl md:text-5xl font-bold tracking-wider`}>Recent projects</h1>
                 <PageProgress progressColor={activeCard} />
             </motion.div>
 
