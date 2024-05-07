@@ -176,7 +176,7 @@ body {
   .nav-item {
     display: flex;
     position: relative;
-    padding: 15px;
+    padding: 0 15px 0 0;
     cursor: pointer;
     font-weight: 600;
   }

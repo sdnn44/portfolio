@@ -5,7 +5,7 @@ import { motion, useMotionValueEvent, useScroll, useSpring, useTransform } from 
 import { SocialIcon } from 'react-social-icons';
 import { DirectionAwareHover } from '../ui/direction-aware-hover';
 import { IconType } from 'react-icons';
-import MobingBorder from '../Button/MovingBorder';
+import MovingBorder from '../Button/MovingBorder';
 
 import { projectStyles } from '../../utils/project-themes';
 
@@ -141,14 +141,14 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                         </div>
                         <p className='text-base md:text-sm lg:text-base text-gray-400 text-center md:text-left px-5 md:px-0'>{project.description}</p>
                         <div className='flex w-full'>
-                            <MobingBorder className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
+                            <MovingBorder className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
                                 <SocialIcon url="https://github.com" fgColor='white' bgColor='transparent' />
                                 <span className='flex tracking-wider font-medium'>Live demo</span>
-                            </MobingBorder>
-                            <MobingBorder className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
+                            </MovingBorder>
+                            <MovingBorder className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
                                 <SocialIcon url="https://github.com" fgColor='white' bgColor='transparent' />
                                 <span className='flex tracking-wider font-medium'>Code</span>
-                            </MobingBorder>
+                            </MovingBorder>
                         </div>
                     </motion.div>
                 </div>

@@ -2,8 +2,6 @@ import { cn } from '@/app/utils/cn';
 import React from 'react'
 import FollowCursor from '../FollowCursor/FollowCursor';
 
-type Props = {}
-
 export default function MovingBorder({
     children,
     className,
@@ -26,7 +24,8 @@ export default function MovingBorder({
                         "relative z-20 flex justify-center items-center w-full rounded-[0.60rem]",
                         className
                     )}>
-                        {children}</div>
+                        {children}
+                    </div>
                 </div>
             </div>
         </FollowCursor>

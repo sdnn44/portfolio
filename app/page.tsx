@@ -26,7 +26,7 @@ export default function Home() {
         <Skills />
       </section>
       <section id="contact" style={{ scrollSnapAlign: 'none' }} className='bg-[#090909] z-20 bg-dot-[#5a21b6]/[0.5]'>
-        <div className="relative">
+        <div className="relative h-full">
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
           <Contact />
         </div>
