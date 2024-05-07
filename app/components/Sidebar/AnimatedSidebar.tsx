@@ -28,7 +28,7 @@ export default function AnimatedSidebar({ }: Props) {
     return (
         <motion.nav
             animate={isOpen ? "open" : "closed"}
-            className='flex flex-col items-center justify-center bg-white text-black z-20'>
+            className='flex flex-col items-center justify-center bg-white text-black z-30'>
             <motion.div
                 ref={togglerRef}
                 variants={toggleBetweenSidebar}

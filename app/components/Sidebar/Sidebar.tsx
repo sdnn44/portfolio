@@ -21,7 +21,7 @@ export default function Sidebar({ }: Props) {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div className="flex justify-center items-center h-full p-6 z-20 text-white">
+    <div className="flex justify-center items-center h-full p-6 z-30 text-white">
       <motion.ul
         variants={variants}
         className='nav list-none mt-10'>

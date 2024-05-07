@@ -50,8 +50,8 @@ const experiences: ExperienceProps[] = [
     id: 3,
     img: "stella.jpg",
     role: "Junior Extruder Operator",
-    company: "Stella",
-    date: ["Apr 2018 - Oct 2018", "Jul 2019 - Oct 2019", "Jul 2021 - Oct 2021", "Jul 2022 - Oct 2022"],
+    company: "Stella Pack S.A",
+    date: ["Apr 2018 - Oct 2018", "Jul - Oct 2019 & 2021 & 2022"],
     desc: "While my role wasn't directly related to IT, I gained valuable soft skills. As a production operator, I oversaw the manufacturing of plastic sleeves, subsequently molded into garbage bags by machines. I applied analytical thinking to continuously monitor the effectiveness of our operations, drawing appropriate conclusions. I effectively coordinated and organized the work of both local and international employees. Also creatively addressed challenges while prioritizing unique customer requirements. Ensuring meticulous attention to detail, I demonstrated the ability to collaborate seamlessly within diverse teams, facilitating the achievement of shared objectives.",
   },
   {

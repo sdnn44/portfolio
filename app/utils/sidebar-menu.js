@@ -1,4 +1,4 @@
-import { home, about, experiance, contact, projects } from "./icons";
+import { home, about, experience, contact, projects } from "./icons";
 export const menu = [
   {
     id: 1,
@@ -14,9 +14,9 @@ export const menu = [
   },
   {
     id: 3,
-    title: "Experiance",
-    icon: experiance,
-    link: "#experiance",
+    title: "Experience",
+    icon: experience,
+    link: "#experience",
   },
   {
     id: 4,

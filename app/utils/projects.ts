@@ -18,8 +18,8 @@ const portfolioProjects: Project[] = [
     img: "portfolio-preview1.png",
     description: "This website serves as a portfolio to showcase my projects and provide insights into my background. The site features sections detailing my educational background, employment history, recent projects, and a contact area for further inquiries. The project was developed with Next.js 13, React 18, Tailwind CSS, leveraging Framer Motion and gsap for smooth animations.",
     tech: [SiNextdotjs, SiReactquery, SiTailwindcss],
-    github: "",
-    livedemo: "",
+    github: "https://github.com/sdnn44/portfolio",
+    livedemo: "http://localhost:3000/",
   },
   {
     id: 2,
@@ -27,8 +27,8 @@ const portfolioProjects: Project[] = [
     img: "cs-archive-preview1.png",
     description: "A website that aggregates previously scrapped information about player bans from Counter-Strike 1.6 servers from various sources and displays it intuitively in one place. Utilizing SteamAPI, the site presents essential user details, including account creation date, country of origin, and a summary of any bans, categorized by type. Data was collected using Python and Selenium, and the frontend was built with React 18.",
     tech: [SiPython, SiReact, SiRedux, SiReactrouter, SiFirebase, SiStyledcomponents, SiMui, SiExpress],
-    github: "",
-    livedemo: "",
+    github: "https://github.com/sdnn44/cs-archive",
+    livedemo: "https://cs-archive.vercel.app/",
   },
   {
     id: 3,
@@ -36,8 +36,8 @@ const portfolioProjects: Project[] = [
     img: "messageme-preview1.png",
     description: "The project involved the use of modern web technologies, such as Google Firebase and React, to provide an interactive chat environment in which messages can be transmitted in real time, regardless of the type of device being used. The application provides users with fundamental functions characteristic of popular instant messengers such as user lock, and notifications. Its design, as well as its preparation, has been targeted so that it can be classified as a progressive application (PWA).",
     tech: [SiReact, SiFirebase, SiReactrouter, SiRedux, SiReactquery, SiStyledcomponents, SiMui],
-    github: "",
-    livedemo: "",
+    github: "https://github.com/sdnn44/messageme",
+    livedemo: "https://messagemenow.vercel.app/login",
   },
   {
     id: 4,
@@ -45,8 +45,8 @@ const portfolioProjects: Project[] = [
     img: "twitchify-preview1.png",
     description: "A web application that allows users to easily display the most popular clips from the Twitch.tv platform, specifically those from their favorite creators. The use of twitch API in the project allows the user to easily view the most watched clips from a selected time period, or for a selected game. The project was created using Next.js 13, React 18, Tailwind CSS, Material UI and framer-motion for animation.",
     tech: [SiNextdotjs, SiReact, SiTypescript, SiNodedotjs, SiTailwindcss, SiMui, SiAxios],
-    github: "",
-    livedemo: "",
+    github: "https://github.com/sdnn44/twitchify",
+    livedemo: "https://twitchify.vercel.app/",
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const portfolioProjects: Project[] = [
     img: "cs-archive-preview1.png",
     description: "Intuitive application designed to help users efficiently manage their tasks. Users can easily add, delete, or edit tasks, as well as mark them as completed or important. The application enhances productivity by offering visual previews of tasks through both a pie chart and a calendar view. All these features are seamlessly integrated into a user-friendly dashboard, making task management both effective and visually appealing.",
     tech: [SiNextdotjs, SiReact, SiMongodb, SiStyledcomponents, SiPrisma, SiAxios],
-    github: "",
+    github: "https://github.com/sdnn44/task-manager",
     livedemo: "",
   },
   {

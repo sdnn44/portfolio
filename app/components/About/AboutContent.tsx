@@ -31,7 +31,7 @@ export default function AboutContent({ }: Props) {
                         <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Employment:</strong> <span className='text-sm'>Open</span></div>
                     </TextReveal>
                     <TextReveal>
-                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Education:</strong> <span className='text-sm'>Katolicki Uniwersytet Lubelski - Master Degree</span></div>
+                        <div className='text-sm flex flex-col'><strong className='uppercase text-violet-800 tracking-widest text-base md:text-lg'>Education:</strong> <span className='text-sm'>The John Paul II Catholic University of Lublin - Master Degree</span></div>
                     </TextReveal>
                 </div>
             </div>

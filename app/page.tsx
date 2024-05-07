@@ -4,7 +4,6 @@ import Experiance from "./components/Experience/Experience";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Project from "./components/Project/Project";
-import Sidebar from "./components/Sidebar/Sidebar";
 import Skills from "./components/Skills/Skills";
 
 export default function Home() {
@@ -17,10 +16,12 @@ export default function Home() {
       <section id="about" style={{ scrollSnapAlign: 'none' }} className="bg-gradient-to-t from-[#0c0c1d] from-50% to-[#5a21b665]">
         <About />
       </section>
-      <section id="experiance" style={{ scrollSnapAlign: 'none' }} className="experiance-section">
+      <section id="experience" style={{ scrollSnapAlign: 'none' }} className="experiance-section">
         <Experiance />
       </section>
-      <Project />
+      <div id="projects">
+        <Project />
+      </div>
       <section id="skills" style={{ scrollSnapAlign: 'none' }} className='skill-section z-0'>
         <Skills />
       </section>
