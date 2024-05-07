@@ -24,8 +24,7 @@ export default function MovingBorder({
                         "relative z-20 flex justify-center items-center w-full rounded-[0.60rem]",
                         className
                     )}>
-                        {children}
-                    </div>
+                        {children}</div>
                 </div>
             </div>
         </FollowCursor>

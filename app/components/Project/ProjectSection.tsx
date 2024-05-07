@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useMotionValueEvent, useScroll, useSpring, useTransform } from "framer-motion";
 import { SocialIcon } from 'react-social-icons';
+import { FaGithub } from "react-icons/fa";
 import { DirectionAwareHover } from '../ui/direction-aware-hover';
 import { IconType } from 'react-icons';
 import MovingBorder from '../Button/MovingBorder';
@@ -14,6 +15,7 @@ import { projectStyles } from '../../utils/project-themes';
 // ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 import gsap from 'gsap';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface Project {
     id: number;
@@ -22,6 +24,8 @@ interface Project {
     description: string;
     tech: IconType[];
     buttonBackground?: string;
+    github: string;
+    livedemo: string;
 }
 
 interface SectionProps {
@@ -140,15 +144,22 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                             <span className={`text-3xl md:text-3xl lg:text-4xl text-bold ${projectStyleVar.closeTag}`}>{'/>'}</span>
                         </div>
                         <p className='text-base md:text-sm lg:text-base text-gray-400 text-center md:text-left px-5 md:px-0'>{project.description}</p>
-                        <div className='flex w-full'>
-                            <MovingBorder className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
-                                <SocialIcon url="https://github.com" fgColor='white' bgColor='transparent' />
-                                <span className='flex tracking-wider font-medium'>Live demo</span>
-                            </MovingBorder>
-                            <MovingBorder className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
-                                <SocialIcon url="https://github.com" fgColor='white' bgColor='transparent' />
-                                <span className='flex tracking-wider font-medium'>Code</span>
-                            </MovingBorder>
+                        <div className='flex w-full items-start gap-24'>
+
+                            <Link href={project.github}>
+                                <MovingBorder className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
+                                    <FaGithub size={25} />
+                                    <span className='flex tracking-wider font-medium p-3'>Code</span>
+                                </MovingBorder>
+                            </Link>
+
+                            <Link href={project.livedemo}>
+                                <MovingBorder className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
+                                    <FaGithub size={25} />
+                                    <span className='flex tracking-wider font-medium p-3'>Live demo</span>
+                                </MovingBorder>
+                            </Link>
+
                         </div>
                     </motion.div>
                 </div>
