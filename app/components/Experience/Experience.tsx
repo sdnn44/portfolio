@@ -2,18 +2,10 @@
 import React from 'react';
 import experiences from '@/app/utils/experiences';
 
-// import Timeline from '@mui/lab/Timeline';
-// import TimelineItem from '@mui/lab/TimelineItem';
-// import TimelineSeparator from '@mui/lab/TimelineSeparator';
-// import TimelineConnector from '@mui/lab/TimelineConnector';
-// import TimelineContent from '@mui/lab/TimelineContent';
-// import TimelineDot from '@mui/lab/TimelineDot';
-
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 import ExperienceCard from './ExperienceCard';
-import { experiance } from '@/app/utils/icons';
 import SectionHeader from '../SectionHeader/SectionHeader';
 type Props = {}
 
