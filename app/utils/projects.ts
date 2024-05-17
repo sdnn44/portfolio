@@ -51,7 +51,7 @@ const portfolioProjects: Project[] = [
   {
     id: 5,
     title: "task-manager",
-    img: "cs-archive-preview1.png",
+    img: "taskmanager-preview1.png",
     description: "Intuitive application designed to help users efficiently manage their tasks. Users can easily add, delete, or edit tasks, as well as mark them as completed or important. The application enhances productivity by offering visual previews of tasks through both a pie chart and a calendar view. All these features are seamlessly integrated into a user-friendly dashboard, making task management both effective and visually appealing.",
     tech: [SiNextdotjs, SiReact, SiMongodb, SiStyledcomponents, SiPrisma, SiAxios],
     github: "https://github.com/sdnn44/task-manager",
@@ -59,12 +59,12 @@ const portfolioProjects: Project[] = [
   },
   {
     id: 6,
-    title: "Personal portfolio",
-    img: "cs-archive-preview1.png",
-    description: "LNikt nie lubi oszustów, prawda? Aplikacja została stworzona z jednoznacznym celem: wspierania uczciwej i sprawiedliwej rozgrywki dla szerokiej społeczności graczy. Strona pozwala na sprawdzenie Steam_ID gracza pod kątem banów za oszukiwanie. Użytkownik na podstawie Steam_ID gracza może sprawdzić, czy na konto została nałożona aktywna blokada permanentna.",
+    title: "admin-helper",
+    img: "admindashboard-preview1.png",
+    description: "An application used to count game time and the number of server administration bans. The data is scraped from various sources and automatically added to the database.",
     tech: [SiNextdotjs, SiReactquery, SiSupabase, SiTailwindcss],
-    github: "#",
-    livedemo: "#",
+    github: "https://github.com/sdnn44/admin-summary",
+    livedemo: "https://strefaskilla-helper.vercel.app",
   },
 ];
 
