@@ -66,8 +66,8 @@ export default function ExperienceCard({ experience }: ExperienceProps) {
                         <div className='font-semibold text-gray-300'>{experience.company}</div>
                         <div className='font-medium text-[14px] text-gray-500'>{experience.role}</div>
                         <div className='text-[12px] text-gray-500'>{experience.date.map((date, index) => (
-        <div key={index}>{date}</div>
-    ))}</div>
+                            <div key={index}>{date}</div>
+                        ))}</div>
                     </div>
                 </div>
                 <div>

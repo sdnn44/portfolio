@@ -144,7 +144,7 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                             <span className={`text-3xl md:text-3xl lg:text-4xl text-bold ${projectStyleVar.closeTag}`}>{'/>'}</span>
                         </div>
                         <p className='text-base md:text-sm lg:text-base text-gray-400 text-center md:text-left px-5 md:px-0'>{project.description}</p>
-                        <div className='flex w-full items-start gap-24'>
+                        <div className='flex w-full items-start gap-12 md:gap-24'>
 
                             <Link href={project.github}>
                                 <MovingBorder className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>

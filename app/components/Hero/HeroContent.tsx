@@ -32,7 +32,6 @@ export default function HeroContent({
                 <Button className="button left w-[7rem] md:w-[10rem] lg:w-[11rem] px-[10px] py-[15px]" label='Get in touch'>
                     <p className='text-[#5a21b5]'>Contact</p>
                 </Button>
-                {/* <a href='#' className='button left'>Contact</a> */}
             </div>
         </div>
     )
