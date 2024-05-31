@@ -52,7 +52,15 @@ export default function Button({ children, className, label, backgroundColor = "
         }
         <div ref={circle} className="w-1/3 h-[150%] absolute top-[120%] left-0 skew-x-[20deg]" style={{ backgroundColor }}>
           <div ref={text} className='flex content-center mt-7 justify-center -skew-x-[20deg] text-white font-bold'>
-            {label}
+            {label === 'Download CV' ? (
+              <a target="_blank" rel="noopener noreferrer" href='/LukaszRzedzicki.pdf'>
+                {label}
+              </a>
+            ) : (
+              <a href="#contact">
+                {label}
+              </a>
+            )}
           </div>
         </div >
       </div >
