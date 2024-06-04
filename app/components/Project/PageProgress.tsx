@@ -16,6 +16,6 @@ export default function PageProgress({ progressColor }: { progressColor: number 
     const projectStyle = projectStyles[(progressColor) % projectStyles.length];
 
     return (
-        <motion.div className={`${projectStyle.buttonBackground} p-1 m-10 text-center rounded-full `} style={{ scaleX }} />
+        <motion.div className={`${projectStyle.buttonBackground} p-1 m-4 md:m-10 text-center rounded-full `} style={{ scaleX }} />
     )
 }

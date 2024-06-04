@@ -119,7 +119,7 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                     backgroundColor: projectStyle.backgroundColors,
                 }}
                 className='flex flex-col justify-center items-center w-full h-full overflow-hidden px-3'>
-                <div className="h-full max-w-[1100px] m-auto flex md:gap-[50px] flex-col md:flex-row items-center justify-center pt-36 md:pt-0 z-0">
+                <div className="h-full max-w-[1100px] m-auto flex md:gap-[50px] flex-col md:flex-row items-center justify-center pt-24 md:pt-0 z-0">
                     <div ref={ref} className="flex md:h-2/5 w-full md:w-1/2 z-0">
                         <DirectionAwareHover imageUrl={`/${project.img}`}>
                             <div className='space-y-5'>
