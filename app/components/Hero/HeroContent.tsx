@@ -23,7 +23,11 @@ export default function HeroContent({
                 </TextReveal>
             </h1>
             <TextReveal>
-                <p className='text-sm md:text-base lg:text-lg text-center mx-5 md:mx-0 md:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elitmet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat accusamus reiciendis quibusdam error modi dignissimos tempore, nam soluta, impedit explicabo, ipsa optio sit minus itaque? Modi sed atque ratione!</p>
+                <p className='text-sm md:text-base lg:text-lg text-center mx-5 md:mx-0 md:text-left'>
+                    Recent computer science master's graduate with a passion for web development, actively exploring
+                    emerging technologies while seeking new challenges. I want to use my skills to further develop my
+                    professional career and make meaningful contributions to the team's achievements.
+                </p>
             </TextReveal>
             <div className='flex gap-5 md:gap-10 w-full justify-evenly z-10'>
                 <Button className="button left w-[7rem] md:w-[10rem] lg:w-[11rem] px-[10px] py-[15px]" label='Download CV'>

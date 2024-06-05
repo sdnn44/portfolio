@@ -24,11 +24,11 @@ export default function Contact({ }: Props) {
                 <div className="flex flex-col gap-1">
                     <div className='flex flex-row items-center gap-2'>
                         <SocialIcon network="whatsapp" fgColor='white' bgColor='transparent' />
-                        <p className='font-bold'>+48 604 590 321</p>
+                        <p className='font-bold'>+48 605 573 451</p>
                     </div>
                     <div className='flex flex-row items-center gap-2'>
                         <SocialIcon network="email" fgColor='white' bgColor='transparent' />
-                        <p className='font-bold'>slidennnq@poczta.com</p>
+                        <p className='font-bold'>slidennnq@gmail.com</p>
                     </div>
                     <div className='flex flex-row items-center gap-2'>
                         <SocialIcon network="discord" fgColor='white' bgColor='transparent' />
