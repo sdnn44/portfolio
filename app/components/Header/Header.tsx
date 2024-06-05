@@ -21,9 +21,9 @@ export default function Header({ }: Props) {
             </div>
 
             <div className='flex flex-row items-center'>
-                <FollowCursor><SocialIcon url="https://twitter.com" fgColor='currentColor' bgColor='transparent' className='text-white hover:text-[#7969a9] duration-75' /></FollowCursor>
-                <FollowCursor><SocialIcon url="https://discord.com" fgColor='currentColor' bgColor='transparent' className='text-white hover:text-[#7969a9] duration-75'  /></FollowCursor>
-                <FollowCursor><SocialIcon url="https://github.com" fgColor='currentColor' bgColor='transparent' className='text-white hover:text-[#7969a9] duration-75'  /></FollowCursor>
+                <FollowCursor><SocialIcon url="https://twitter.com/addicted2dark" fgColor='currentColor' bgColor='transparent' className='text-white hover:text-[#7969a9] duration-75' /></FollowCursor>
+                <FollowCursor><SocialIcon url="https://discord.gg/46URkm" fgColor='currentColor' bgColor='transparent' className='text-white hover:text-[#7969a9] duration-75'  /></FollowCursor>
+                <FollowCursor><SocialIcon url="https://github.com/sdnn44" fgColor='currentColor' bgColor='transparent' className='text-white hover:text-[#7969a9] duration-75'  /></FollowCursor>
             </div>
 
 
