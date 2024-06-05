@@ -1,5 +1,5 @@
 import { IconType } from "react-icons";
-import { SiAxios, SiEdotleclerc, SiExpress, SiFirebase, SiMongodb, SiMui, SiNextdotjs, SiNodedotjs, SiPrisma, SiPython, SiReact, SiReactquery, SiReactrouter, SiRedux, SiStyledcomponents, SiSupabase, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiAxios, SiEdotleclerc, SiExpress, SiFirebase, SiFramer, SiMongodb, SiMui, SiNextdotjs, SiNodedotjs, SiPrisma, SiPython, SiReact, SiReactquery, SiReactrouter, SiRedux, SiStyledcomponents, SiSupabase, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 interface Project {
   id: number;
@@ -19,7 +19,7 @@ const portfolioProjects: Project[] = [
     description: "This website serves as a portfolio to showcase my projects and provide insights into my background. The site features sections detailing my educational background, employment history, recent projects, and a contact area for further inquiries. The project was developed with Next.js 13, React 18, Tailwind CSS, leveraging Framer Motion and gsap for smooth animations.",
     tech: [SiNextdotjs, SiReactquery, SiTailwindcss],
     github: "https://github.com/sdnn44/portfolio",
-    livedemo: "http://localhost:3000/",
+    livedemo: "https://slajdev.vercel.app/",
   },
   {
     id: 2,
@@ -62,7 +62,7 @@ const portfolioProjects: Project[] = [
     title: "admin-helper",
     img: "admindashboard-preview1.png",
     description: "An application used to count game time and the number of server administration bans. The data is scraped from various sources and automatically added to the database.",
-    tech: [SiNextdotjs, SiReactquery, SiSupabase, SiTailwindcss],
+    tech: [SiNextdotjs, SiReact, SiTypescript, SiFirebase, SiAxios, SiTailwindcss],
     github: "https://github.com/sdnn44/admin-summary",
     livedemo: "https://strefaskilla-helper.vercel.app",
   },
