@@ -1,5 +1,5 @@
 import { IconType } from "react-icons";
-import { SiAxios, SiEdotleclerc, SiExpress, SiFirebase, SiFramer, SiMongodb, SiMui, SiNextdotjs, SiNodedotjs, SiPrisma, SiPython, SiReact, SiReactquery, SiReactrouter, SiRedux, SiStyledcomponents, SiSupabase, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiAxios, SiEdotleclerc, SiExpress, SiFirebase, SiFramer, SiInertia, SiLaravel, SiMongodb, SiMui, SiNextdotjs, SiNodedotjs, SiPhpmyadmin, SiPrisma, SiPython, SiReact, SiReactquery, SiReactrouter, SiRedux, SiStyledcomponents, SiSupabase, SiTailwindcss, SiTypescript, SiVite, SiVuedotjs } from "react-icons/si";
 
 interface Project {
   id: number;
@@ -65,6 +65,24 @@ const portfolioProjects: Project[] = [
     tech: [SiNextdotjs, SiReact, SiTypescript, SiFirebase, SiAxios, SiTailwindcss],
     github: "https://github.com/sdnn44/admin-summary",
     livedemo: "https://strefaskilla-helper.vercel.app",
+  },
+  {
+    id: 7,
+    title: "advanced admin-helper",
+    img: "admindashboard-preview1.png",
+    description: "An extended application that allows you to summarize the work of admins. It has been extended with the ability to add, edit and delete admins directly from a web browser. An account system has also been added, allowing the user to create an account and use all the application's functionalities.",
+    tech: [SiNextdotjs, SiReact, SiTypescript, SiFirebase, SiAxios, SiTailwindcss, SiLaravel, SiPhpmyadmin],
+    github: "https://github.com/sdnn44/advanced-admin-summary",
+    livedemo: "https://github.com/sdnn44/advanced-admin-summary",
+  },
+  {
+    id: 8,
+    title: "clonestagram",
+    img: "admindashboard-preview1.png",
+    description: "A web application written along the lines of the well-known Instagram app. Users can add posts, edit them, add reactions under them, and comment on other people's posts.",
+    tech: [SiVuedotjs, SiInertia, SiLaravel, SiPhpmyadmin, SiTailwindcss, SiVite],
+    github: "https://github.com/sdnn44/clonestagram",
+    livedemo: "https://github.com/sdnn44/clonestagram",
   },
 ];
 
