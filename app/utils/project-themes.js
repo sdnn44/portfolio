@@ -53,4 +53,22 @@ export const projectStyles = [
     border: "bg-[conic-gradient(#8884d8_20deg,transparent_120deg)]",
     textColor: "text-[#6b21a8]",
   },
+  {
+    backgroundColors: "rgb(12, 12, 29)",
+    buttonBackground: "bg-[#8884d8]",
+    buttonBackgroundHover: "hover:bg-[#635dcc]",
+    underlineColors: "decoration-[#8884d8]",
+    closeTag: "text-[#8884d8]",
+    border: "bg-[conic-gradient(#8884d8_20deg,transparent_120deg)]",
+    textColor: "text-[#6b21a8]",
+  },
+  {
+    backgroundColors: "rgb(12, 12, 29)",
+    buttonBackground: "bg-[#8884d8]",
+    buttonBackgroundHover: "hover:bg-[#635dcc]",
+    underlineColors: "decoration-[#8884d8]",
+    closeTag: "text-[#8884d8]",
+    border: "bg-[conic-gradient(#8884d8_20deg,transparent_120deg)]",
+    textColor: "text-[#6b21a8]",
+  },
 ];
