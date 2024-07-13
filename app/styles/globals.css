@@ -211,3 +211,17 @@ body {
     opacity: 5%;
   }
 }
+body::-webkit-scrollbar, .scrollbar-style::-webkit-scrollbar, .sidebar-list::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0c0c1d ;
+}
+
+body::-webkit-scrollbar-thumb, .scrollbar-style::-webkit-scrollbar-thumb, .sidebar-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 70, 209, 0.652);
+  border-radius: 0px;
+  border: 3px none #ffffff;
+}

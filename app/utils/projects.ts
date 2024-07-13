@@ -1,5 +1,5 @@
 import { IconType } from "react-icons";
-import { SiAxios, SiEdotleclerc, SiExpress, SiFirebase, SiFramer, SiInertia, SiLaravel, SiMongodb, SiMui, SiNextdotjs, SiNodedotjs, SiPhpmyadmin, SiPrisma, SiPython, SiReact, SiReactquery, SiReactrouter, SiRedux, SiStyledcomponents, SiSupabase, SiTailwindcss, SiTypescript, SiVite, SiVuedotjs } from "react-icons/si";
+import { SiAxios, SiEdotleclerc, SiExpress, SiFirebase, SiFramer, SiInertia, SiLaravel, SiMongodb, SiMui, SiNextdotjs, SiNodedotjs, SiPhpmyadmin, SiPrisma, SiPython, SiReact, SiReactquery, SiReactrouter, SiRedux, SiSelenium, SiStyledcomponents, SiSupabase, SiTailwindcss, SiTypescript, SiVite, SiVuedotjs } from "react-icons/si";
 
 interface Project {
   id: number;
@@ -73,7 +73,7 @@ const portfolioProjects: Project[] = [
     description: "An extended application that allows you to summarize the work of admins. It has been extended with the ability to add, edit and delete admins directly from a web browser. An account system has also been added, allowing the user to create an account and use all the application's functionalities.",
     tech: [SiNextdotjs, SiReact, SiTypescript, SiFirebase, SiAxios, SiTailwindcss, SiLaravel, SiPhpmyadmin],
     github: "https://github.com/sdnn44/advanced-admin-summary",
-    livedemo: "https://github.com/sdnn44/advanced-admin-summary",
+    livedemo: "https://codmod-summary.vercel.app/",
   },
   {
     id: 8,
@@ -83,6 +83,15 @@ const portfolioProjects: Project[] = [
     tech: [SiVuedotjs, SiInertia, SiLaravel, SiPhpmyadmin, SiTailwindcss, SiVite],
     github: "https://github.com/sdnn44/clonestagram",
     livedemo: "https://github.com/sdnn44/clonestagram",
+  },
+  {
+    id: 8,
+    title: "chatbox-tracker",
+    img: "admindashboard-preview1.png",
+    description: "An application that allows users to keep track of the messages they send. In addition to messages for individuals, a leaderboard has been created with the people with the highest number of messages sent.",
+    tech: [SiReact, SiTailwindcss, SiVite, SiFirebase, SiPython, SiSelenium],
+    github: "https://github.com/sdnn44/chatbox-tracker",
+    livedemo: "https://github.com/sdnn44/chatbox-tracker",
   },
 ];
 
