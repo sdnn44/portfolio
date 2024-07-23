@@ -69,7 +69,7 @@ const portfolioProjects: Project[] = [
   {
     id: 7,
     title: "advanced admin-helper",
-    img: "admindashboard-preview1.png",
+    img: "codmoddashboard-preview.png",
     description: "An extended application that allows you to summarize the work of admins. It has been extended with the ability to add, edit and delete admins directly from a web browser. An account system has also been added, allowing the user to create an account and use all the application's functionalities.",
     tech: [SiNextdotjs, SiReact, SiTypescript, SiFirebase, SiAxios, SiTailwindcss, SiLaravel, SiPhpmyadmin],
     github: "https://github.com/sdnn44/advanced-admin-summary",
@@ -77,21 +77,21 @@ const portfolioProjects: Project[] = [
   },
   {
     id: 8,
+    title: "chatbox-tracker",
+    img: "chatbox-tracker.png",
+    description: "An application that allows users to keep track of the messages they send. In addition to messages for individuals, a leaderboard has been created with the people with the highest number of messages sent.",
+    tech: [SiReact, SiTailwindcss, SiVite, SiFirebase, SiPython, SiSelenium],
+    github: "https://github.com/sdnn44/chatbox-tracker",
+    livedemo: "https://chatbox-tracker.vercel.app/",
+  },
+  {
+    id: 9,
     title: "clonestagram",
-    img: "admindashboard-preview1.png",
+    img: "clonestagram.png",
     description: "A web application written along the lines of the well-known Instagram app. Users can add posts, edit them, add reactions under them, and comment on other people's posts.",
     tech: [SiVuedotjs, SiInertia, SiLaravel, SiPhpmyadmin, SiTailwindcss, SiVite],
     github: "https://github.com/sdnn44/clonestagram",
     livedemo: "https://github.com/sdnn44/clonestagram",
-  },
-  {
-    id: 8,
-    title: "chatbox-tracker",
-    img: "admindashboard-preview1.png",
-    description: "An application that allows users to keep track of the messages they send. In addition to messages for individuals, a leaderboard has been created with the people with the highest number of messages sent.",
-    tech: [SiReact, SiTailwindcss, SiVite, SiFirebase, SiPython, SiSelenium],
-    github: "https://github.com/sdnn44/chatbox-tracker",
-    livedemo: "https://github.com/sdnn44/chatbox-tracker",
   },
 ];
 

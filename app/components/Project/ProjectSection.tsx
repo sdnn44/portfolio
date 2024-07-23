@@ -146,7 +146,7 @@ const ProjectSection = ({ project, activeCard }: SectionProps) => {
                         <p className='text-base md:text-sm lg:text-base text-gray-400 text-center md:text-left px-5 md:px-0'>{project.description}</p>
                         <div className='flex w-full items-start gap-12 md:gap-24'>
 
-                            <Link href={project.github}>
+                            <Link href={project.github} rel="noopener noreferrer" target="_blank">
                                 <MovingBorder className={`${projectStyleVar.buttonBackground} duration-300 ease-in-out ${projectStyleVar.buttonBackgroundHover}`} borderClassName={`${projectStyleVar.border}`}>
                                     <FaGithub size={25} />
                                     <span className='flex tracking-wider font-medium p-3'>Code</span>
